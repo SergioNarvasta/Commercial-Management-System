@@ -2,7 +2,7 @@
 {
     public class TipoUsuario
     {
-
+        public int Id { get; set; }
 
     }
 }
