@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROYECTOS\\CoWorking\\CoWorkingAPI\\CoWorkingAPI.csproj": {}
+    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\CoWorkingAPI.csproj": {}
   },
   "projects": {
-    "D:\\PROYECTOS\\CoWorking\\CoWorkingAPI\\CoWorkingAPI.csproj": {
+    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\CoWorkingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROYECTOS\\CoWorking\\CoWorkingAPI\\CoWorkingAPI.csproj",
+        "projectUniqueName": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\CoWorkingAPI.csproj",
         "projectName": "CoWorkingAPI",
-        "projectPath": "D:\\PROYECTOS\\CoWorking\\CoWorkingAPI\\CoWorkingAPI.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\PROYECTOS\\CoWorking\\CoWorkingAPI\\obj\\",
+        "projectPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\CoWorkingAPI.csproj",
+        "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
+        "outputPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,6 +63,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.26, 3.1.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -71,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
