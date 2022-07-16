@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PharmacyBA"
+    "\\PharmacyBA",
+    "\\PharmacyBA\\Models"
   ],
-  "SelectedNode": "\\PharmacyBA\\Properties",
+  "SelectedNode": "\\PharmacyBA\\Models\\TipoUsuario.cs",
   "PreviewInSolutionExplorer": false
 }
