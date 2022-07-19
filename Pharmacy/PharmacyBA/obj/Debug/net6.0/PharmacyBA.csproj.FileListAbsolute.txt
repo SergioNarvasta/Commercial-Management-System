@@ -1,0 +1,7 @@
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.csproj.AssemblyReference.cache
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.AssemblyInfoInputs.cache
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.AssemblyInfo.cs
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.csproj.CoreCompileInputs.cache
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.MvcApplicationPartsAssemblyInfo.cs
+D:\PROYECTO\PharmaProject\SystemPharma_1.0\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.MvcApplicationPartsAssemblyInfo.cache
