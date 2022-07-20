@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROYECTO\\PharmaProject\\SystemPharma_1.0\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {}
+    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {}
   },
   "projects": {
-    "D:\\PROYECTO\\PharmaProject\\SystemPharma_1.0\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {
+    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROYECTO\\PharmaProject\\SystemPharma_1.0\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+        "projectUniqueName": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
         "projectName": "PharmacyBA",
-        "projectPath": "D:\\PROYECTO\\PharmaProject\\SystemPharma_1.0\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
-        "packagesPath": "C:\\Users\\Pier\\.nuget\\packages\\",
-        "outputPath": "D:\\PROYECTO\\PharmaProject\\SystemPharma_1.0\\Pharmacy\\PharmacyBA\\obj\\",
+        "projectPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+        "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
+        "outputPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

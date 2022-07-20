@@ -40,11 +40,14 @@ namespace PharmacyBA.Models
         public Boolean Estado { get; set; }
 
         [Display(Name = "Fecha de Ingreso")]
-        public DateTime FechaIng { get; set; } 
+        public DateTime FechaIng { get; set; }
 
 
+        // Foreign Key
+        public int IdTipoUsuario { get; set; }
+        public virtual TipoUsuario  ?TipoUsuario { get; set; }
 
-             Tipo
+
 
     }
 }
