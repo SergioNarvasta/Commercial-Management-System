@@ -39,8 +39,8 @@ namespace PharmacyBA.Models
         [Required(ErrorMessage = "Debe de ingresar el estado ")]
         public Boolean Estado { get; set; }
 
-        [Display(Name = "Fecha de Ingreso")]
-        public DateTime FechaIng { get; set; }
+        [Display(Name = "Fecha de Registro")]
+        public DateTime FechaReg { get; set; }
 
 
         // Foreign Key
