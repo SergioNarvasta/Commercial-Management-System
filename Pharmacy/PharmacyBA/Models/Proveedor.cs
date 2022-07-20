@@ -9,7 +9,7 @@ namespace PharmacyBA.Models
 
         [Required]
         [MaxLength(14)]
-        [Display(Name = "Nro Ruc"]
+        [Display(Name = "Nro Ruc")]
         public string Ruc { get; set; }
 
         [MaxLength(15)]
