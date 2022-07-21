@@ -5,7 +5,7 @@ namespace PharmacyBA.Models
     public class Cliente
     {
         [Key]
-        public int Idusuario { get; set; }
+        public int CodCliente { get; set; }
 
         [Display(Name = "Nombres")]
         [Required(ErrorMessage = "Debe de ingresar sus nombres")]

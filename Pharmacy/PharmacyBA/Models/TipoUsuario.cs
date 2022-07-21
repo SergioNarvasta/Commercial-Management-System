@@ -8,7 +8,7 @@ namespace PharmacyBA.Models
 {
     public class TipoUsuario
     {
-        public int IdTipoUsuario { get; set; }
+        public int CodTipoUsu { get; set; }
 
         public string ?Descripcion { get; set; }
 

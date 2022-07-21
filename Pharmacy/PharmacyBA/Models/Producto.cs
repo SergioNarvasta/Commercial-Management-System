@@ -5,12 +5,12 @@ namespace PharmacyBA.Models
     public class Producto
     {
         [Key]
-        public int IdProducto { get; set; }
+        public int CodProducto { get; set; }
 
         [Display(Name = "Codigo")]
         [Required(ErrorMessage = "Debe de ingresar sus Codigo del producto")]
         [MaxLength(20, ErrorMessage = "El campo no debe de tener mas de 20 caracteres")]
-        public string Codigo { get; set; }
+        public string Correlativo { get; set; }
 
         [Display(Name = "Nombre")]
         [Required(ErrorMessage = "Debe de ingresar sus Nombre del producto")]

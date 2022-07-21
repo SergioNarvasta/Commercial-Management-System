@@ -5,7 +5,7 @@ namespace PharmacyBA.Models
     public class TipoComprobante
     {
         [Key]
-        public int IdTipoComprobante { get; set; }
+        public int CodTipoComp { get; set; }
 
         [Display (Name ="Descipcion de tipo de comprobantes")]
         [Required(ErrorMessage = "Debe de ingresar el tipo de comprobante")]

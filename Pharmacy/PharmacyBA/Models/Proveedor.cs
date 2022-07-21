@@ -5,7 +5,7 @@ namespace PharmacyBA.Models
     public class Proveedor
     {
         [Key]
-        public int Id { get; set; }
+        public int CodProveedor { get; set; }
 
         [Required]
         [MaxLength(14)]

@@ -9,7 +9,7 @@ namespace PharmacyBA.Models
     public class Usuario
     {
         [Key]
-        public int Idusuario { get; set; }
+        public int CodUsuario { get; set; }
 
         [Display(Name = "Apellidos Completos")]
         [Required(ErrorMessage = "Debe de ingresar los apellidos")]
