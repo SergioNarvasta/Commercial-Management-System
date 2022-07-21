@@ -40,7 +40,7 @@ namespace PharmacyBA.Models
         public Boolean Estado { get; set; }
 
         [Display(Name = "Fecha de Registro")]
-        public DateTime FechaReg { get; set; }
+        public DateTime FechaReg { get; set; } = DateTime.Now;
 
 
         // Foreign Key

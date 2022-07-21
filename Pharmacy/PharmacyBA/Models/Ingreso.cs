@@ -8,7 +8,7 @@ namespace PharmacyBA.Models
         [Key]
         public int CodIngreso { get; set; }
         
-        public DateTime FecIng { get; set; }
+        public DateTime FecIng { get; set; } = DateTime.Now;
 
         public Double Totalcompra { get; set; }
 

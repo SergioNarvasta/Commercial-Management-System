@@ -20,7 +20,7 @@ namespace PharmacyBA.Models
         [Display(Name ="Descripcion")]
         public string ?Nombre { get; set; }
 
-        public DateTime FechReg { get; set; }
+        public DateTime FechReg { get; set; } = DateTime.Now;
 
 
     }
