@@ -12,10 +12,7 @@ namespace PharmacyBA.Models
 
         public Double Totalcompra { get; set; }
 
-        public int Cod_usu { get; set; }
-
-
-
+        public int CodUsuario { get; set; }
 
     }
 }
