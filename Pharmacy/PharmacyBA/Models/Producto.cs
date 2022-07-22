@@ -20,7 +20,7 @@ namespace PharmacyBA.Models
         [Display(Name = "Nombre Cientifico")]
         [Required(ErrorMessage = "Debe de ingresar sus Nombre Cientifico del producto")]
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]
-        public string? NombreCientifico { get; set; }
+        public string? NombreCientifico { get; set; } //DCI 
 
         [Display(Name = "Concentracion")]
         [Required(ErrorMessage = "Debe de ingresar la Concentracion del producto")]
@@ -49,8 +49,8 @@ namespace PharmacyBA.Models
 
         //Foreign Key
         public int CodLote { get; set; }
-
         public virtual Lote Lote { get; set; }
+
 
         public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }
         public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }

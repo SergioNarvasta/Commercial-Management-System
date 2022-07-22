@@ -37,7 +37,7 @@ namespace PharmacyBA.Models
         public string ?DNI { get; set; }
 
         [Required(ErrorMessage = "Debe de ingresar el estado ")]
-        public Boolean Estado { get; set; }
+        public Boolean Estado { get; set; } //Activo o Inactivo
 
         [Display(Name = "Fecha de Registro")]
         public DateTime FechaReg { get; set; } = DateTime.Now;
@@ -48,6 +48,7 @@ namespace PharmacyBA.Models
         public virtual TipoUsuario  ?TipoUsuario { get; set; }
 
         public virtual ICollection<Ingreso> Ingreso { get; set; }
+        public virtual ICollection<Venta> Venta { get; set; }
 
 
 
