@@ -37,7 +37,6 @@ namespace PharmacyBA.Models
         public DateTime FechaReg { get; set; } = DateTime.Now;
 
 
-
         //Agregar las referencia
 
     }

@@ -8,6 +8,7 @@ namespace PharmacyBA.Models
 {
     public class TipoUsuario
     {
+        [Key]
         public int CodTipoUsu { get; set; }
 
         public string ?Descripcion { get; set; }
