@@ -22,6 +22,8 @@ namespace PharmacyBA.Models
 
         public DateTime FechReg { get; set; } = DateTime.Now;
 
+        public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }
+
 
     }
 }
