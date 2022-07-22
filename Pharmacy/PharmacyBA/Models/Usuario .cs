@@ -47,6 +47,8 @@ namespace PharmacyBA.Models
         public int IdTipoUsuario { get; set; }
         public virtual TipoUsuario  ?TipoUsuario { get; set; }
 
+        public virtual ICollection<Ingreso> Ingreso { get; set; }
+
 
 
     }

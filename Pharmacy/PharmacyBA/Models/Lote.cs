@@ -10,5 +10,7 @@ namespace PharmacyBA.Models
         public DateTime FechaVen { get; set; }
         
         public string ?RegSanit { get; set; }
+
+        public ICollection<Producto> Producto { get; set; }
     }
 }

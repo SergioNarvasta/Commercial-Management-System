@@ -12,8 +12,14 @@
 
         //Foreign Keys
         public int CodTipoComp { get; set; }
+        public virtual TipoComprobante TipoComprobante { get; set; }
         public int CodUsuario { get; set; }
+        public virtual Usuario  Usuario { get; set; }
         public int CodCliente { get; set; }
- 
+        public virtual Cliente Cliente      { get; set; }
+
+        //Referencia de Relacion 
+        public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
+
     }
 }

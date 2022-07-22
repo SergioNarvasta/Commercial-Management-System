@@ -36,8 +36,9 @@ namespace PharmacyBA.Models
         [Display(Name = "Fecha de Registro")]
         public DateTime FechaReg { get; set; } = DateTime.Now;
 
-
-        //Agregar las referencia
+        //Referencia de Relacion 
+        public virtual ICollection<Venta> Venta { get; set; }
+      
 
     }
 }
