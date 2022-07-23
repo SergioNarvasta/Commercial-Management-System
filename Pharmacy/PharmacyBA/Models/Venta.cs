@@ -1,7 +1,10 @@
-﻿namespace PharmacyBA.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PharmacyBA.Models
 {
     public class Venta
     {
+        [Key]
         public int Codventa { get; set; }
         public int Descuento { get; set; } = 0;
         public Double Total { get; set; } = 0;

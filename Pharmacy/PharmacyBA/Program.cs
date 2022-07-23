@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using PharmacyBA.Data;
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddDbContext<PharmacyBAContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PharmacyBAContext") ?? throw new InvalidOperationException("Connection string 'PharmacyBAContext' not found.")));
 

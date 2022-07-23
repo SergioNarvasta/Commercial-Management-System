@@ -47,6 +47,7 @@ namespace PharmacyBA.Models
         [MaxLength(5, ErrorMessage = "El campo no debe de tener mas de 5 caracteres")]
         public Boolean Restriccion { get; set; }
 
+
         //Foreign Key
         public int CodLote { get; set; }
         public virtual Lote Lote { get; set; }
