@@ -12,11 +12,11 @@ namespace PharmacyBA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DetalleVentasController : ControllerBase
+    public class DetalleVentaController : ControllerBase
     {
         private readonly PharmacyBAContext _context;
 
-        public DetalleVentasController(PharmacyBAContext context)
+        public DetalleVentaController(PharmacyBAContext context)
         {
             _context = context;
         }

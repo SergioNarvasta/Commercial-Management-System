@@ -15,12 +15,10 @@ namespace PharmacyBA.Controllers
     public class ClientesController : ControllerBase
     {
         private readonly PharmacyBAContext _context;
-
         public ClientesController(PharmacyBAContext context)
         {
             _context = context;
         }
-
         // GET: api/Clientes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetCliente()
@@ -31,7 +29,6 @@ namespace PharmacyBA.Controllers
           }
             return await _context.Cliente.ToListAsync();
         }
-
         // GET: api/Clientes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetCliente(int id)
@@ -82,7 +79,6 @@ namespace PharmacyBA.Controllers
         }
 
         // POST: api/Clientes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
