@@ -12,52 +12,55 @@ namespace PharmacyBA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductosController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
         private readonly PharmacyBAContext _context;
-        public ProductosController(PharmacyBAContext context)
+
+        public UsuariosController(PharmacyBAContext context)
         {
             _context = context;
         }
-        // GET: api/Productos
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Producto>>> GetProducto()
-        {
-          if (_context.Producto == null)
-          {
-              return NotFound();
-          }
-            return await _context.Producto.ToListAsync();
-        }
-        // GET: api/Productos/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Producto>> GetProducto(int id)
-        {
-          if (_context.Producto == null)
-          {
-              return NotFound();
-          }
-            var producto = await _context.Producto.FindAsync(id);
 
-            if (producto == null)
+        // GET: api/Usuarios
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuario()
+        {
+          if (_context.Usuario == null)
+          {
+              return NotFound();
+          }
+            return await _context.Usuario.ToListAsync();
+        }
+
+        // GET: api/Usuarios/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        {
+          if (_context.Usuario == null)
+          {
+              return NotFound();
+          }
+            var usuario = await _context.Usuario.FindAsync(id);
+
+            if (usuario == null)
             {
                 return NotFound();
             }
 
-            return producto;
+            return usuario;
         }
 
-        // PUT: api/Productos/5
+        // PUT: api/Usuarios/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProducto(int id, Producto producto)
+        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
         {
-            if (id != producto.CodProducto)
+            if (id != usuario.CodUsuario)
             {
                 return BadRequest();
             }
 
-            _context.Entry(producto).State = EntityState.Modified;
+            _context.Entry(usuario).State = EntityState.Modified;
 
             try
             {
@@ -65,7 +68,7 @@ namespace PharmacyBA.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ProductoExists(id))
+                if (!UsuarioExists(id))
                 {
                     return NotFound();
                 }
@@ -78,44 +81,44 @@ namespace PharmacyBA.Controllers
             return NoContent();
         }
 
-        // POST: api/Productos
+        // POST: api/Usuarios
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Producto>> PostProducto(Producto producto)
+        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
-          if (_context.Producto == null)
+          if (_context.Usuario == null)
           {
-              return Problem("Entity set 'PharmacyBAContext.Producto'  is null.");
+              return Problem("Entity set 'PharmacyBAContext.Usuario'  is null.");
           }
-            _context.Producto.Add(producto);
+            _context.Usuario.Add(usuario);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetProducto", new { id = producto.CodProducto }, producto);
+            return CreatedAtAction("GetUsuario", new { id = usuario.CodUsuario }, usuario);
         }
 
-        // DELETE: api/Productos/5
+        // DELETE: api/Usuarios/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProducto(int id)
+        public async Task<IActionResult> DeleteUsuario(int id)
         {
-            if (_context.Producto == null)
+            if (_context.Usuario == null)
             {
                 return NotFound();
             }
-            var producto = await _context.Producto.FindAsync(id);
-            if (producto == null)
+            var usuario = await _context.Usuario.FindAsync(id);
+            if (usuario == null)
             {
                 return NotFound();
             }
 
-            _context.Producto.Remove(producto);
+            _context.Usuario.Remove(usuario);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool ProductoExists(int id)
+        private bool UsuarioExists(int id)
         {
-            return (_context.Producto?.Any(e => e.CodProducto == id)).GetValueOrDefault();
+            return (_context.Usuario?.Any(e => e.CodUsuario == id)).GetValueOrDefault();
         }
     }
 }

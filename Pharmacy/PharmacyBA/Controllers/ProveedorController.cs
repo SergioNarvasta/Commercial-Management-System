@@ -12,52 +12,55 @@ namespace PharmacyBA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductosController : ControllerBase
+    public class ProveedorController : ControllerBase
     {
         private readonly PharmacyBAContext _context;
-        public ProductosController(PharmacyBAContext context)
+
+        public ProveedorController(PharmacyBAContext context)
         {
             _context = context;
         }
-        // GET: api/Productos
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Producto>>> GetProducto()
-        {
-          if (_context.Producto == null)
-          {
-              return NotFound();
-          }
-            return await _context.Producto.ToListAsync();
-        }
-        // GET: api/Productos/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Producto>> GetProducto(int id)
-        {
-          if (_context.Producto == null)
-          {
-              return NotFound();
-          }
-            var producto = await _context.Producto.FindAsync(id);
 
-            if (producto == null)
+        // GET: api/Proveedor
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Proveedor>>> GetProveedor()
+        {
+          if (_context.Proveedor == null)
+          {
+              return NotFound();
+          }
+            return await _context.Proveedor.ToListAsync();
+        }
+
+        // GET: api/Proveedor/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Proveedor>> GetProveedor(int id)
+        {
+          if (_context.Proveedor == null)
+          {
+              return NotFound();
+          }
+            var proveedor = await _context.Proveedor.FindAsync(id);
+
+            if (proveedor == null)
             {
                 return NotFound();
             }
 
-            return producto;
+            return proveedor;
         }
 
-        // PUT: api/Productos/5
+        // PUT: api/Proveedor/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProducto(int id, Producto producto)
+        public async Task<IActionResult> PutProveedor(int id, Proveedor proveedor)
         {
-            if (id != producto.CodProducto)
+            if (id != proveedor.CodProveedor)
             {
                 return BadRequest();
             }
 
-            _context.Entry(producto).State = EntityState.Modified;
+            _context.Entry(proveedor).State = EntityState.Modified;
 
             try
             {
@@ -65,7 +68,7 @@ namespace PharmacyBA.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ProductoExists(id))
+                if (!ProveedorExists(id))
                 {
                     return NotFound();
                 }
@@ -78,44 +81,44 @@ namespace PharmacyBA.Controllers
             return NoContent();
         }
 
-        // POST: api/Productos
+        // POST: api/Proveedor
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Producto>> PostProducto(Producto producto)
+        public async Task<ActionResult<Proveedor>> PostProveedor(Proveedor proveedor)
         {
-          if (_context.Producto == null)
+          if (_context.Proveedor == null)
           {
-              return Problem("Entity set 'PharmacyBAContext.Producto'  is null.");
+              return Problem("Entity set 'PharmacyBAContext.Proveedor'  is null.");
           }
-            _context.Producto.Add(producto);
+            _context.Proveedor.Add(proveedor);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetProducto", new { id = producto.CodProducto }, producto);
+            return CreatedAtAction("GetProveedor", new { id = proveedor.CodProveedor }, proveedor);
         }
 
-        // DELETE: api/Productos/5
+        // DELETE: api/Proveedor/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProducto(int id)
+        public async Task<IActionResult> DeleteProveedor(int id)
         {
-            if (_context.Producto == null)
+            if (_context.Proveedor == null)
             {
                 return NotFound();
             }
-            var producto = await _context.Producto.FindAsync(id);
-            if (producto == null)
+            var proveedor = await _context.Proveedor.FindAsync(id);
+            if (proveedor == null)
             {
                 return NotFound();
             }
 
-            _context.Producto.Remove(producto);
+            _context.Proveedor.Remove(proveedor);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool ProductoExists(int id)
+        private bool ProveedorExists(int id)
         {
-            return (_context.Producto?.Any(e => e.CodProducto == id)).GetValueOrDefault();
+            return (_context.Proveedor?.Any(e => e.CodProveedor == id)).GetValueOrDefault();
         }
     }
 }
