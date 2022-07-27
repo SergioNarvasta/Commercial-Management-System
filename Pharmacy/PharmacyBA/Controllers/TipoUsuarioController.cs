@@ -49,9 +49,7 @@ namespace PharmacyBA.Controllers
 
             return tipoUsuario;
         }
-
-        // PUT: api/TipoUsuario/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/TipoUsuario/5 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTipoUsuario(int id, TipoUsuario tipoUsuario)
         {
@@ -80,7 +78,6 @@ namespace PharmacyBA.Controllers
 
             return NoContent();
         }
-
         // POST: api/TipoUsuario
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -95,7 +92,6 @@ namespace PharmacyBA.Controllers
 
             return CreatedAtAction("GetTipoUsuario", new { id = tipoUsuario.CodTipoUsu }, tipoUsuario);
         }
-
         // DELETE: api/TipoUsuario/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTipoUsuario(int id)
@@ -109,13 +105,10 @@ namespace PharmacyBA.Controllers
             {
                 return NotFound();
             }
-
             _context.TipoUsuario.Remove(tipoUsuario);
             await _context.SaveChangesAsync();
-
             return NoContent();
         }
-
         private bool TipoUsuarioExists(int id)
         {
             return (_context.TipoUsuario?.Any(e => e.CodTipoUsu == id)).GetValueOrDefault();

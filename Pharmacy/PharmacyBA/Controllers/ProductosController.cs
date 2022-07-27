@@ -43,7 +43,6 @@ namespace PharmacyBA.Controllers
             {
                 return NotFound();
             }
-            
             return producto;
         }
         // PUT: api/Productos/5
@@ -105,7 +104,6 @@ namespace PharmacyBA.Controllers
             {
                 return NotFound();
             }
-
             _context.Producto.Remove(producto);
             await _context.SaveChangesAsync();
 
