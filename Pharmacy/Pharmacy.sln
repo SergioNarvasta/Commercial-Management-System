@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyBA", "PharmacyBA\PharmacyBA.csproj", "{046451CA-6332-407A-A6F4-60B947460ABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PharmacyBA", "PharmacyBA\PharmacyBA.csproj", "{046451CA-6332-407A-A6F4-60B947460ABE}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "PharmacyFR", "PharmacyFR\PharmacyFR.esproj", "{C242CE33-4831-4F89-81CB-707D310A3B4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{046451CA-6332-407A-A6F4-60B947460ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046451CA-6332-407A-A6F4-60B947460ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{046451CA-6332-407A-A6F4-60B947460ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C242CE33-4831-4F89-81CB-707D310A3B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C242CE33-4831-4F89-81CB-707D310A3B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C242CE33-4831-4F89-81CB-707D310A3B4B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C242CE33-4831-4F89-81CB-707D310A3B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C242CE33-4831-4F89-81CB-707D310A3B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C242CE33-4831-4F89-81CB-707D310A3B4B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

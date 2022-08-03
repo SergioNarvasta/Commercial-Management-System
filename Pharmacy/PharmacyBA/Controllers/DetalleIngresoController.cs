@@ -15,7 +15,6 @@ namespace PharmacyBA.Controllers
     public class DetalleIngresoController : ControllerBase
     {
         private readonly PharmacyBAContext _context;
-
         public DetalleIngresoController(PharmacyBAContext context)
         {
             _context = context;

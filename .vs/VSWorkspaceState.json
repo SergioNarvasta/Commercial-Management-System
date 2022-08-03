@@ -3,8 +3,7 @@
     "",
     "\\Pharmacy",
     "\\Pharmacy\\PharmacyBA",
-    "\\Pharmacy\\PharmacyBA\\Controllers",
-    "\\Pharmacy\\PharmacyBA\\Models"
+    "\\Pharmacy\\PharmacyBA\\Controllers"
   ],
   "SelectedNode": "\\Pharmacy\\Pharmacy.sln",
   "PreviewInSolutionExplorer": false
