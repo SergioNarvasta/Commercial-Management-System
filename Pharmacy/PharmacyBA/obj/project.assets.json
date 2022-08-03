@@ -9662,19 +9662,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MI PC\\.nuget\\packages\\": {}
+    "C:\\Users\\LUAN\\.nuget\\packages\\": {},
+    "D:\\SOFTWARE\\VISUAL STUDIO 2022\\COMPONENTES_HERRAMIENTAS_SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+      "projectUniqueName": "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
       "projectName": "PharmacyBA",
-      "projectPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
-      "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
-      "outputPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\obj\\",
+      "projectPath": "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+      "packagesPath": "C:\\Users\\LUAN\\.nuget\\packages\\",
+      "outputPath": "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\SOFTWARE\\VISUAL STUDIO 2022\\COMPONENTES_HERRAMIENTAS_SDK\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LUAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
