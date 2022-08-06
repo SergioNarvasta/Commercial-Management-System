@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +10,9 @@ using PharmacyBA.Data;
 using PharmacyBA.Models;
 
 namespace PharmacyBA.Controllers
+     
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductosController : ControllerBase
@@ -19,7 +22,7 @@ namespace PharmacyBA.Controllers
         {
             _context = context;
         }
-        // GET: api/Productos
+        [EnableCors("MyPolicy")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProducto()
         {
@@ -29,7 +32,7 @@ namespace PharmacyBA.Controllers
           }
             return await _context.Producto.ToListAsync();
         }
-        // GET: api/Productos/5
+        [EnableCors("MyPolicy")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
@@ -45,8 +48,7 @@ namespace PharmacyBA.Controllers
             }
             return producto;
         }
-        // PUT: api/Productos/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [EnableCors("MyPolicy")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProducto(int id, Producto producto)
         {
@@ -76,8 +78,7 @@ namespace PharmacyBA.Controllers
             return NoContent();
         }
 
-        // POST: api/Productos
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [EnableCors("MyPolicy")]
         [HttpPost]
         public async Task<ActionResult<Producto>> PostProducto(Producto producto)
         {

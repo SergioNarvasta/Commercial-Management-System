@@ -4,10 +4,10 @@
     "\\Pharmacy",
     "\\Pharmacy\\PharmacyBA",
     "\\Pharmacy\\PharmacyBA\\Data",
-    "\\Pharmacy\\PharmacyBA\\Migrations",
+    "\\Pharmacy\\PharmacyBA\\Models",
     "\\Pharmacy\\PharmacyBA\\Services",
     "\\Pharmacy\\PharmacyFR"
   ],
-  "SelectedNode": "\\Pharmacy\\Pharmacy.sln",
+  "SelectedNode": "\\Pharmacy\\PharmacyBA\\Models\\Producto.cs",
   "PreviewInSolutionExplorer": false
 }
