@@ -22,7 +22,6 @@ namespace PharmacyBA.Controllers
         {
             _context = context;
         }
-        [EnableCors("MyPolicy")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProducto()
         {
@@ -32,7 +31,6 @@ namespace PharmacyBA.Controllers
           }
             return await _context.Producto.ToListAsync();
         }
-        [EnableCors("MyPolicy")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
@@ -48,7 +46,6 @@ namespace PharmacyBA.Controllers
             }
             return producto;
         }
-        [EnableCors("MyPolicy")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProducto(int id, Producto producto)
         {
@@ -56,9 +53,7 @@ namespace PharmacyBA.Controllers
             {
                 return BadRequest();
             }
-
             _context.Entry(producto).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -74,7 +69,6 @@ namespace PharmacyBA.Controllers
                     throw;
                 }
             }
-
             return NoContent();
         }
 
