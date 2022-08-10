@@ -4,7 +4,7 @@ using PharmacyBA.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-services.AddCors(  
+builder.Services.AddCors(  
     options => options.AddPolicy("AllowCors",  
         builder => {  
             builder  

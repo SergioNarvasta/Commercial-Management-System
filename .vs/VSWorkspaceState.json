@@ -3,11 +3,11 @@
     "",
     "\\Pharmacy",
     "\\Pharmacy\\PharmacyBA",
-    "\\Pharmacy\\PharmacyBA\\Controllers",
     "\\Pharmacy\\PharmacyBA\\Data",
+    "\\Pharmacy\\PharmacyBA\\Migrations",
     "\\Pharmacy\\PharmacyBA\\Services",
     "\\Pharmacy\\PharmacyFR"
   ],
-  "SelectedNode": "\\Pharmacy\\Pharmacy.sln",
+  "SelectedNode": "\\Pharmacy\\PharmacyBA\\Data\\PharmacyBAContext.cs",
   "PreviewInSolutionExplorer": false
 }
