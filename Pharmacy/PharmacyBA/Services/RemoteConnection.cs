@@ -1,4 +1,7 @@
-﻿namespace PharmacyBA.Services
+﻿
+
+
+namespace PharmacyBA.Services
 {
     public class RemoteConnection
     {

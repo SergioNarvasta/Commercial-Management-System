@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {}
+    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {}
   },
   "projects": {
-    "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {
+    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+        "projectUniqueName": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
         "projectName": "PharmacyBA",
-        "projectPath": "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
-        "packagesPath": "C:\\Users\\LUAN\\.nuget\\packages\\",
-        "outputPath": "D:\\SOFTWARE\\GIT HUB\\Repositorios\\PharmacySoft\\Pharmacy\\PharmacyBA\\obj\\",
+        "projectPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+        "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
+        "outputPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\SOFTWARE\\VISUAL STUDIO 2022\\COMPONENTES_HERRAMIENTAS_SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\LUAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

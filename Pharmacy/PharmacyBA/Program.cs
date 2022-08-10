@@ -4,6 +4,23 @@ using PharmacyBA.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(  
+    options => options.AddPolicy("AllowCors",  
+        builder => {  
+            builder  
+            //.WithOrigins("http://localhost:4456") //AllowSpecificOrigins;  
+            //.WithOrigins("http://localhost:4456", "http://localhost:4457") //AllowMultipleOrigins;  
+                .AllowAnyOrigin() //AllowAllOrigins;  
+                //.WithMethods("GET") //AllowSpecificMethods;  
+                //.WithMethods("GET", "PUT") //AllowSpecificMethods;  
+                //.WithMethods("GET", "PUT", "POST") //AllowSpecificMethods;  
+                //.WithMethods("GET", "PUT", "POST", "DELETE") //AllowSpecificMethods;  
+                .AllowAnyMethod() //AllowAllMethods;  
+                //.WithHeaders("Accept", "Content-type", "Origin", "X-Custom-Header"); //AllowSpecificHeaders;  
+                .AllowAnyHeader(); //AllowAllHeaders;  
+        })  
+);  
+
 builder.Services.AddDbContext<PharmacyBAContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PharmacyBAContext") ?? throw new InvalidOperationException("Connection string 'PharmacyBAContext' not found.")));
 
@@ -24,6 +41,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowCors");
 
 app.UseAuthorization();
 

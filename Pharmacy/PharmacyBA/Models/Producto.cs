@@ -37,21 +37,19 @@ namespace PharmacyBA.Models
         [MaxLength(10, ErrorMessage = "El campo no debe de tener mas de 20 caracteres")]
         public decimal PrecioVenta { get; set; }
 
-        [Display(Name = "Cantidad")]
+        [Display(Name = "Stock")]
         [Required(ErrorMessage = "Debe de ingresar la cantidad del producto")]
         [MaxLength(10, ErrorMessage = "El campo no debe de tener mas de 10 caracteres")]
-        public decimal Cantidad { get; set; }
+        public decimal Stock { get; set; }
 
         [Display(Name = "Restriccion")]
         [Required(ErrorMessage = "Debe de ingresar 0 producto si el producto no tiene restriccion y 1 si lo tiene")]
         [MaxLength(5, ErrorMessage = "El campo no debe de tener mas de 5 caracteres")]
         public Boolean Restriccion { get; set; }
 
-
         //Foreign Key
         public int CodLote { get; set; }
         public virtual Lote Lote { get; set; }
-
 
         public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }
         public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
