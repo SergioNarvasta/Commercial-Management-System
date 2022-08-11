@@ -527,3 +527,8 @@ D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\obj\Debug\net6
 D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.pdb
 D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\obj\Debug\net6.0\PharmacyBA.genruntimeconfig.cache
 D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\obj\Debug\net6.0\ref\PharmacyBA.dll
+D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\bin\Debug\net6.0\System.Web.Cors.dll
+D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\bin\Debug\net6.0\System.Web.Http.dll
+D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\bin\Debug\net6.0\System.Web.Http.Cors.dll
+D:\SOFTWARE\GIT HUB\Repositorios\PharmacySoft\Pharmacy\PharmacyBA\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

@@ -17,10 +17,19 @@ namespace PharmacyBA.Models
 
         [Required]
         [MaxLength(50)]
-        [Display(Name ="Descripcion")]
-        public string ?Nombre { get; set; }
+        [Display(Name ="Nombre")]
+        public string Nombre { get; set; }
 
         public DateTime FechReg { get; set; } = DateTime.Now;
+
+        [Required]
+        [MaxLength(100)]
+        [Display(Name = "Direccion")]
+        public string Direccion { get; set; }
+
+        [Required]
+        [MaxLength(9)]
+        public int Telefono { get; set; }
 
         public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }
 

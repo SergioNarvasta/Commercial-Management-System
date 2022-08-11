@@ -16,7 +16,7 @@ namespace PharmacyBA.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
         {
-            optionsBuilder.UseSqlServer("Server=LAPTOP-6CK5JQAF\\LUAN;Database=Pharmacy;Trusted_Connection=true; MultipleActiveResultSets=true;");
+            optionsBuilder.UseSqlServer("Server=LAPTOP-6CK5JQAF;Database=Pharmacy;Trusted_Connection=true; MultipleActiveResultSets=true;");
         }
 
         public DbSet<PharmacyBA.Models.Cliente> Cliente { get; set; }

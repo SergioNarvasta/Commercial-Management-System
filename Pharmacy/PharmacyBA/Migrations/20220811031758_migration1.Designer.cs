@@ -12,8 +12,8 @@ using PharmacyBA.Data;
 namespace PharmacyBA.Migrations
 {
     [DbContext(typeof(PharmacyBAContext))]
-    [Migration("20220723015523_[MigrationBD]")]
-    partial class MigrationBD
+    [Migration("20220811031758_migration1")]
+    partial class migration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -212,10 +212,6 @@ namespace PharmacyBA.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodProducto"), 1L, 1);
 
-                    b.Property<decimal>("Cantidad")
-                        .HasMaxLength(10)
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("CodLote")
                         .HasColumnType("int");
 
@@ -255,6 +251,10 @@ namespace PharmacyBA.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("bit");
 
+                    b.Property<decimal>("Stock")
+                        .HasMaxLength(10)
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("CodProducto");
 
                     b.HasIndex("LoteCodLote");
@@ -275,6 +275,11 @@ namespace PharmacyBA.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<DateTime>("FechReg")
                         .HasColumnType("datetime2");
 
@@ -287,6 +292,10 @@ namespace PharmacyBA.Migrations
                         .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("nvarchar(14)");
+
+                    b.Property<int>("Telefono")
+                        .HasMaxLength(9)
+                        .HasColumnType("int");
 
                     b.HasKey("CodProveedor");
 

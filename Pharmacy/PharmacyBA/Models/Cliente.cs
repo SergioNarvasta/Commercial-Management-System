@@ -7,6 +7,7 @@ namespace PharmacyBA.Models
         [Key]
         public int CodCliente { get; set; }
 
+
         [Display(Name = "Nombres")]
         [Required(ErrorMessage = "Debe de ingresar sus nombres")]
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PharmacyBA.Migrations
 {
-    public partial class MigrationBD : Migration
+    public partial class migration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,7 +52,9 @@ namespace PharmacyBA.Migrations
                     Ruc = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: false),
                     Codigo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    FechReg = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    FechReg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Telefono = table.Column<int>(type: "int", maxLength: 9, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -97,7 +99,7 @@ namespace PharmacyBA.Migrations
                     Concentracion = table.Column<decimal>(type: "decimal(18,2)", maxLength: 10, nullable: false),
                     Presentacion = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     PrecioVenta = table.Column<decimal>(type: "decimal(18,2)", maxLength: 10, nullable: false),
-                    Cantidad = table.Column<decimal>(type: "decimal(18,2)", maxLength: 10, nullable: false),
+                    Stock = table.Column<decimal>(type: "decimal(18,2)", maxLength: 10, nullable: false),
                     Restriccion = table.Column<bool>(type: "bit", maxLength: 5, nullable: false),
                     CodLote = table.Column<int>(type: "int", nullable: false),
                     LoteCodLote = table.Column<int>(type: "int", nullable: false)

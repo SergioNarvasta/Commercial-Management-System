@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using PharmacyBA.Models;
 
 namespace PharmacyBA.Controllers
 {
+    [EnableCors("myCorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductosController : ControllerBase
@@ -19,6 +21,7 @@ namespace PharmacyBA.Controllers
         {
             _context = context;
         }
+        
         // GET: api/Productos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProducto()
