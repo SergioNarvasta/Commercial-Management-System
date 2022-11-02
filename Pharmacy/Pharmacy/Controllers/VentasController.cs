@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Pharmacy.Data;
-using PharmacyBA.Models;
+using Pharmacy.Models;
 
 namespace Pharmacy.Controllers
 {
@@ -43,15 +43,10 @@ namespace Pharmacy.Controllers
             return View(venta);
         }
 
-        // GET: Ventas/Create
         public IActionResult Create()
         {
             return View();
         }
-
-        // POST: Ventas/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Codventa,Descuento,Total,Fecha,TipoPago,CodTipoComp,CodUsuario,CodCliente")] Venta venta)
@@ -64,8 +59,6 @@ namespace Pharmacy.Controllers
             }
             return View(venta);
         }
-
-        // GET: Ventas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Venta == null)

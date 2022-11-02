@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Pharmacy.Data;
-using PharmacyBA.Models;
+using Pharmacy.Models;
 
 namespace Pharmacy.Controllers
 {

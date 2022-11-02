@@ -1,4 +1,4 @@
-﻿namespace PharmacyBA.Models
+﻿namespace Pharmacy.Models
 {
     public class KardexProductoC
     {
