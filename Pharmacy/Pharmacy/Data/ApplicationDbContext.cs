@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PharmacyBA.Models;
 
 namespace Pharmacy.Data
 {
@@ -9,5 +10,6 @@ namespace Pharmacy.Data
             : base(options)
         {
         }
+        public DbSet<PharmacyBA.Models.Producto> Producto { get; set; }
     }
 }
