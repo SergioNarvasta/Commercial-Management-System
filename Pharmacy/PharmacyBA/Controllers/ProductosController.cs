@@ -72,7 +72,6 @@ namespace PharmacyBA.Controllers
             }
             return NoContent();
         }
-
         [EnableCors("MyPolicy")]
         [HttpPost]
         public async Task<ActionResult<Producto>> PostProducto(Producto producto)
@@ -86,8 +85,6 @@ namespace PharmacyBA.Controllers
 
             return CreatedAtAction("GetProducto", new { id = producto.CodProducto }, producto);
         }
-
-        // DELETE: api/Productos/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProducto(int id)
         {
@@ -105,7 +102,6 @@ namespace PharmacyBA.Controllers
 
             return NoContent();
         }
-
         private bool ProductoExists(int id)
         {
             return (_context.Producto?.Any(e => e.CodProducto == id)).GetValueOrDefault();

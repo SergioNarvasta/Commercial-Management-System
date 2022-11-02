@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Pharmacy",
-    "\\Pharmacy\\PharmacyBA",
-    "\\Pharmacy\\PharmacyBA\\Data",
-    "\\Pharmacy\\PharmacyBA\\Migrations",
-    "\\Pharmacy\\PharmacyBA\\Services",
-    "\\Pharmacy\\PharmacyFR"
+    ""
   ],
+  "SelectedNode": "\\Pharmacy.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -12,8 +12,8 @@ using PharmacyBA.Data;
 namespace PharmacyBA.Migrations
 {
     [DbContext(typeof(PharmacyBAContext))]
-    [Migration("20220723015523_[MigrationBD]")]
-    partial class MigrationBD
+    [Migration("20221102155343_Migration021122")]
+    partial class Migration021122
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -212,10 +212,6 @@ namespace PharmacyBA.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodProducto"), 1L, 1);
 
-                    b.Property<decimal>("Cantidad")
-                        .HasMaxLength(10)
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("CodLote")
                         .HasColumnType("int");
 
@@ -254,6 +250,10 @@ namespace PharmacyBA.Migrations
                     b.Property<bool>("Restriccion")
                         .HasMaxLength(5)
                         .HasColumnType("bit");
+
+                    b.Property<decimal>("Stock")
+                        .HasMaxLength(10)
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("CodProducto");
 

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {}
+    "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {}
   },
   "projects": {
-    "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {
+    "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+        "projectUniqueName": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
         "projectName": "PharmacyBA",
-        "projectPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
-        "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
-        "outputPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Project\\Pharmacy\\PharmacyBA\\obj\\",
+        "projectPath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\PharmacyBA\\PharmacyBA.csproj",
+        "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
+        "outputPath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\PharmacyBA\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\snarvasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +74,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
