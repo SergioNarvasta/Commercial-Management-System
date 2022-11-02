@@ -11,5 +11,6 @@ namespace Pharmacy.Data
         {
         }
         public DbSet<PharmacyBA.Models.Producto> Producto { get; set; }
+        public DbSet<PharmacyBA.Models.Proveedor> Proveedor { get; set; }
     }
 }
