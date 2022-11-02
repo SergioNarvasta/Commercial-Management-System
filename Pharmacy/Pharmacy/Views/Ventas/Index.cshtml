@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PharmacyBA.Models.Venta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descuento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodTipoComp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodCliente)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descuento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodTipoComp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodCliente)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Codventa">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Codventa">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Codventa">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
