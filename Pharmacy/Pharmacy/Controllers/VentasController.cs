@@ -18,21 +18,16 @@ namespace Pharmacy.Controllers
         {
             _context = context;
         }
-
-        // GET: Ventas
         public async Task<IActionResult> Index()
         {
               return View(await _context.Venta.ToListAsync());
         }
-
-        // GET: Ventas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Venta == null)
             {
                 return NotFound();
             }
-
             var venta = await _context.Venta
                 .FirstOrDefaultAsync(m => m.Codventa == id);
             if (venta == null)

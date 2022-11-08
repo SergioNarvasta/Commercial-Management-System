@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pharmacy",
+    "\\Pharmacy\\Pharmacy",
+    "\\Pharmacy\\Pharmacy\\Data",
+    "\\Pharmacy\\Pharmacy\\Models"
   ],
-  "SelectedNode": "\\Pharmacy.sln",
+  "SelectedNode": "\\Pharmacy\\Pharmacy\\Models\\Cliente.cs",
   "PreviewInSolutionExplorer": false
 }

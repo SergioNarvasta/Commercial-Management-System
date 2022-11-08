@@ -2,5 +2,7 @@
 {
     public class KardexProductoD
     {
+
+
     }
 }

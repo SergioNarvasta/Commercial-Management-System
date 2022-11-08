@@ -10,7 +10,6 @@ namespace Pharmacy.Models
         public int Cantidad { get; set; }
         public Double Precio    { get; set; }
         public Double Subtotal  { get; set; }
-
         public Double IGV { get; set; }
 
         public int CodProducto { get; set; }
