@@ -21,7 +21,6 @@ namespace PharmacyBA.Controllers
             _context = context;
         }
 
-        // GET: api/Proveedor
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Proveedor>>> GetProveedor()
         {

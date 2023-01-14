@@ -21,7 +21,6 @@ namespace PharmacyBA.Controllers
             _context = context;
         }
 
-        // GET: api/Lote
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Lote>>> GetLote()
         {
@@ -32,7 +31,6 @@ namespace PharmacyBA.Controllers
             return await _context.Lote.ToListAsync();
         }
 
-        // GET: api/Lote/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Lote>> GetLote(int id)
         {
@@ -50,8 +48,6 @@ namespace PharmacyBA.Controllers
             return lote;
         }
 
-        // PUT: api/Lote/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutLote(int id, Lote lote)
         {
@@ -81,8 +77,6 @@ namespace PharmacyBA.Controllers
             return NoContent();
         }
 
-        // POST: api/Lote
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Lote>> PostLote(Lote lote)
         {
@@ -96,7 +90,6 @@ namespace PharmacyBA.Controllers
             return CreatedAtAction("GetLote", new { id = lote.CodLote }, lote);
         }
 
-        // DELETE: api/Lote/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLote(int id)
         {

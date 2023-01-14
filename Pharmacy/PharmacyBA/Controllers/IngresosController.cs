@@ -31,7 +31,6 @@ namespace PharmacyBA.Controllers
             return await _context.Ingreso.ToListAsync();
         }
 
-        // GET: api/Ingresos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Ingreso>> GetIngreso(int id)
         {
@@ -49,8 +48,6 @@ namespace PharmacyBA.Controllers
             return ingreso;
         }
 
-        // PUT: api/Ingresos/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutIngreso(int id, Ingreso ingreso)
         {

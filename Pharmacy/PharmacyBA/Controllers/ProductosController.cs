@@ -32,6 +32,7 @@ namespace PharmacyBA.Controllers
           }
             return await _context.Producto.ToListAsync();
         }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
@@ -47,6 +48,7 @@ namespace PharmacyBA.Controllers
             }
             return producto;
         }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProducto(int id, Producto producto)
         {
@@ -72,6 +74,7 @@ namespace PharmacyBA.Controllers
             }
             return NoContent();
         }
+        
         [EnableCors("MyPolicy")]
         [HttpPost]
         public async Task<ActionResult<Producto>> PostProducto(Producto producto)

@@ -21,7 +21,6 @@ namespace PharmacyBA.Controllers
             _context = context;
         }
 
-        // GET: api/TipoUsuario
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TipoUsuario>>> GetTipoUsuario()
         {

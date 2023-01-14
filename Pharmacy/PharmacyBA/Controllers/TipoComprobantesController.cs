@@ -21,7 +21,6 @@ namespace PharmacyBA.Controllers
             _context = context;
         }
 
-        // GET: api/TipoComprobantes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TipoComprobante>>> GetTipoComprobante()
         {
