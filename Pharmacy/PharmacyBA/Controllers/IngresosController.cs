@@ -21,7 +21,6 @@ namespace PharmacyBA.Controllers
             _context = context;
         }
 
-        // GET: api/Ingresos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Ingreso>>> GetIngreso()
         {

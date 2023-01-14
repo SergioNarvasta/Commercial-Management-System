@@ -76,8 +76,6 @@ namespace PharmacyBA.Controllers
             return NoContent();
         }
 
-        // POST: api/DetalleIngresoes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<DetalleIngreso>> PostDetalleIngreso(DetalleIngreso detalleIngreso)
         {
@@ -91,7 +89,6 @@ namespace PharmacyBA.Controllers
             return CreatedAtAction("GetDetalleIngreso", new { id = detalleIngreso.CodDetIng }, detalleIngreso);
         }
 
-        // DELETE: api/DetalleIngresoes/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDetalleIngreso(int id)
         {
