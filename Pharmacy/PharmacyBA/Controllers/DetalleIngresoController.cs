@@ -20,7 +20,6 @@ namespace PharmacyBA.Controllers
             _context = context;
         }
 
-        // GET: api/DetalleIngresoes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DetalleIngreso>>> GetDetalleIngreso()
         {
@@ -31,7 +30,6 @@ namespace PharmacyBA.Controllers
             return await _context.DetalleIngreso.ToListAsync();
         }
 
-        // GET: api/DetalleIngresoes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<DetalleIngreso>> GetDetalleIngreso(int id)
         {
@@ -49,8 +47,6 @@ namespace PharmacyBA.Controllers
             return detalleIngreso;
         }
 
-        // PUT: api/DetalleIngresoes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDetalleIngreso(int id, DetalleIngreso detalleIngreso)
         {

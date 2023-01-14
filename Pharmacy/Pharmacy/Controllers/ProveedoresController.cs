@@ -22,6 +22,7 @@ namespace Pharmacy.Controllers
         {
               return View(await _context.Proveedor.ToListAsync());
         }
+        
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Proveedor == null)

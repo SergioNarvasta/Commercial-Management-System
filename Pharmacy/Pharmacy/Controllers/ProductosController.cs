@@ -96,6 +96,7 @@ namespace Pharmacy.Controllers
             }
             return View(producto);
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Producto == null)
@@ -110,6 +111,7 @@ namespace Pharmacy.Controllers
             }
             return View(producto);
         }
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
