@@ -14,6 +14,7 @@ namespace Pharmacy.Data
         {
             optionsBuilder.UseSqlServer("Server=HDVMSQLDES;Database=Z_Pharmacy;User ID=sa; Password=S0p0rt3; MultipleActiveResultSets=true;");
         }
+        
         public DbSet<Pharmacy.Models.Producto> Producto { get; set; }
         public DbSet<Pharmacy.Models.Proveedor> Proveedor { get; set; }
         public DbSet<Pharmacy.Models.Venta> Venta { get; set; }
