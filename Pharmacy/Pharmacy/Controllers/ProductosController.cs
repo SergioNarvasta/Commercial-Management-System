@@ -13,6 +13,7 @@ namespace Pharmacy.Controllers
     public class ProductosController : Controller
     {
         private readonly ApplicationDbContext _context;
+        
 
         public ProductosController(ApplicationDbContext context)
         {

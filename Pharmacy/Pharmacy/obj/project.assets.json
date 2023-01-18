@@ -10291,23 +10291,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\snarvasta\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\MI PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
+      "projectUniqueName": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Git Project\\PharmacySoft\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
       "projectName": "Pharmacy",
-      "projectPath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
-      "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
-      "outputPath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\PharmacySOft\\Pharmacy\\Pharmacy\\obj\\",
+      "projectPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Git Project\\PharmacySoft\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
+      "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
+      "outputPath": "F:\\3. PROYECTOS\\Pharmacy System\\Desarrollo del Proyecto\\Git Project\\PharmacySoft\\Pharmacy\\Pharmacy\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\snarvasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

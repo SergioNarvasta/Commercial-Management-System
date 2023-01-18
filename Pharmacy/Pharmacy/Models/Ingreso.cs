@@ -13,6 +13,7 @@ namespace Pharmacy.Models
         public Double Totalcompra { get; set; }
 
         public int CodUsuario { get; set; } 
+        
         public virtual Usuario ?Usuario  { get; set; }
 
         public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }  

@@ -18,6 +18,7 @@ namespace Pharmacy.Data
         public DbSet<Pharmacy.Models.Producto> Producto { get; set; }
         public DbSet<Pharmacy.Models.Proveedor> Proveedor { get; set; }
         public DbSet<Pharmacy.Models.Venta> Venta { get; set; }
+        
        /* public DbSet<Pharmacy.Models.Cliente> Cliente { get; set; }
         public DbSet<Pharmacy.Models.DetalleIngreso> DetalleIngreso { get; set; }
         public DbSet<Pharmacy.Models.Ingreso> Ingreso { get; set; }
