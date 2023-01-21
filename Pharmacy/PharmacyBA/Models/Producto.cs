@@ -20,17 +20,17 @@ namespace PharmacyBA.Models
         [Display(Name = "Nombre Cientifico")]
         [Required(ErrorMessage = "Debe de ingresar sus Nombre Cientifico del producto")]
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]
-        public string? NombreCientifico { get; set; } //DCI 
+        public string NombreCientifico { get; set; } //DCI 
 
         [Display(Name = "Concentracion")]
         [Required(ErrorMessage = "Debe de ingresar la Concentracion del producto")]
         [MaxLength(10, ErrorMessage = "El campo no debe de tener mas de 10 caracteres")]
-        public decimal? Concentracion { get; set; }
+        public decimal Concentracion { get; set; }
 
         [Display(Name = "Presentacion")]
         [Required(ErrorMessage = "Debe de ingresar la presentacion del producto")]
         [MaxLength(20, ErrorMessage = "El campo no debe de tener mas de 20 caracteres")]
-        public string? Presentacion { get; set; }
+        public string Presentacion { get; set; }
 
         [Display(Name = "PrecioVenta")]
         [Required(ErrorMessage = "Debe de ingresar el precio de venta del producto")]

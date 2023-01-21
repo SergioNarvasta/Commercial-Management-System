@@ -1,0 +1,45 @@
+#btn_gen {
+    background: linear-gradient(to top, #0000FF 0%, #00CED1 100%);
+    border: 1px solid white ;
+    border-radius: 10px 10px 10px 10px ;
+}
+#btn_gen:hover {
+    transform: scale(1.2);
+	transition: all 400ms;
+}
+#form-nroDoc {
+    width: 50%;
+    margin-left: 10px;
+}
+#form-titulo{
+    width: 60%;
+    margin-left: 10px;
+}
+.fg-tit{
+    margin-left: 20%;
+}
+#form-desc{
+    width: 80%;
+    margin-left: 10px;
+}
+#form-tipodoc{
+    width: 50%;
+    margin-left: 10px;
+}
+#form-nombres{
+    width: 73%;
+    margin-left: 10px;
+}
+#form-monto{
+    width: 40%;
+    margin-left: 10px;
+}
+#btn_new{
+    background: linear-gradient(to top,	#40ed30 0%,	#077807 100%);
+    border: 1px solid white ;
+    border-radius: 10px 10px 10px 10px ;
+}
+#btn_new:hover {
+    transform: scale(1.2);
+	transition: all 400ms;
+}
