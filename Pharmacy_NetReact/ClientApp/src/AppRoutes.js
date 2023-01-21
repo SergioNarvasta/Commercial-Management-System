@@ -1,15 +1,15 @@
-import RegistroRecibo from "./componentes/RegistroRecibo";
-import ListadoRecibos from "./componentes/ListadoRecibos";
+import RegistroProducto from "./componentes/RegistroProducto";
+import ListadoProductos from "./componentes/ListadoProductos";
 
 const AppRoutes = [
 
   {
-    path: '/registro-recibo',
-    element: <RegistroRecibo />
+    path: '/registro-producto',
+    element: <RegistroProducto />
   },
   {
-    path: '/listado-recibo',
-    element: <ListadoRecibos />
+    path: '/listado-producto',
+    element: <ListadoProductos />
   }
 ];
 

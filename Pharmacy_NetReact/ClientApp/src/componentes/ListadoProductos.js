@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 import { Button, Card, CardBody, CardHeader, Col, Container, Row} from "reactstrap";
-import TablaRecibos from "./TablaRecibos";
+import TablaProductos from "./TablaProductos";
 
-const ListadoRecibos = () =>{
-  const [recibos,setRecibos] = useState([]);
+const ListadoProductos = () =>{
+  const [productos,setProductos] = useState([]);
   
 
-  const ListarRecibos = async () => {
-    const response = await fetch("/api/receipt/Listado");
+  const ListarProductos = async () => {
+    const response = await fetch("/api/producto/ListadoPrd");
 
     if(response.ok){
       const data = await response.json();
-      setRecibos(data);
-      //console.log(data);
+      setProductos(data);
+      console.log(data);
     }else{
-      console.log("Error al listar (/api/receipt/Listado)")
+      console.log("Error al listar (/api/producto/ListadoPrd)")
     }
   }
   useEffect(()=>{
-    ListarRecibos()
+    ListarProductos()
   },[])
 
 const IrRegistro = () =>{
@@ -31,12 +31,12 @@ const IrRegistro = () =>{
         <Col>
         <Card>
           <CardHeader>
-            <h5>Listado de Recibos</h5>
+            <h5>Listado de Productos </h5>
           </CardHeader>
           <CardBody>
             <Button id="btn_new" onClick={IrRegistro}> Nuevo Recibo</Button>
             <hr/><hr/>
-            <TablaRecibos data={recibos}></TablaRecibos>
+            <TablaProductos data={productos}></TablaProductos>
           </CardBody>
         </Card>
         </Col>
@@ -45,4 +45,4 @@ const IrRegistro = () =>{
   )
 }
 
-export default ListadoRecibos;
+export default ListadoProductos;

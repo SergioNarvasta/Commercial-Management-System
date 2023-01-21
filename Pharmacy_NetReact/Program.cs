@@ -1,4 +1,4 @@
-using Project.Data;
+using NETCore_React.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
