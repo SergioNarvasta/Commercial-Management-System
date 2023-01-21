@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NETCore_React.Models;
 
-namespace Project.Data
+namespace NETCore_React.Data
 {
     public class APIDbContext :DbContext
     {
@@ -16,6 +16,6 @@ namespace Project.Data
         {
             optionsBuilder.UseSqlServer(connectionString);
         }
-        public DbSet<Receipt_RC> Receipt_RC { get; set; }
+        public DbSet<Producto> Producto { get; set; }
     }
 }
