@@ -7,7 +7,7 @@ const ListadoProductos = () =>{
   
 
   const ListarProductos = async () => {
-    const response = await fetch("/api/producto/ListadoPrd");
+    const response = await fetch("api/producto/ListadoPrd");
 
     if(response.ok){
       const data = await response.json();
