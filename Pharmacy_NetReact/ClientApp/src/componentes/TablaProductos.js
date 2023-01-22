@@ -1,13 +1,6 @@
 import { Button, Table } from "reactstrap";
 
 const TablaProductos = ({data}) =>{
-    //const [verRecibo,setVerRecibo]=useState(false);
-    //const [infoRecibo,setInfoRecibo]=useState([]);
-
-    /*const mostrarRecibo = (recibo) =>{
-        setVerRecibo(true);
-        setInfoRecibo(recibo);
-    }*/
     return (
         <Table striped responsive>
             <thead>

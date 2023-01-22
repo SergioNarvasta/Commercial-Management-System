@@ -28,11 +28,10 @@ const RegistroProducto = () =>{
    }
    const enviarDatos = () => {
         guardarProducto(producto)
-    
    }
    const guardarProducto = async (producto) =>{
     console.log(producto);
-    const response = await fetch("/api/producto/RegistrarPrd",{
+    const response = await fetch("api/producto/RegistrarPrd",{
       method:'POST',
       headers: {
          'Content-Type':'application/json;charset=utf-8'
