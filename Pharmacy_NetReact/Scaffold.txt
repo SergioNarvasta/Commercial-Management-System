@@ -1,5 +1,0 @@
-Scaffold-DbContext "Server=DESKTOP-2NA2N4M\\SQLEXPRESS; Database=DbReceipt; Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
-Scaffold-DbContext "Server=DESKTOP-2NA2N4M\\SQLEXPRESS;Database=DbReceipt;Trusted_Connection=true;" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
-
-Scaffold-DbContext "Server=(local); Database=DbReceipt; User Id=SNarvasta; Password=0024; TrustServerCertificate=true " 
-Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
