@@ -1,6 +1,10 @@
 
 
-Pharmaceutical Management System currently developed with .NET 6, Swagger, Entity Framework Core, Dapper, Angular13, SQL Server. Contains the modules: -User Management
+Pharmaceutical Management System currently developed 
+API REST : .NET 6, Entity Framework Core, Dapper, LINQ, Mapper, SQL Server. 
+SPA : React & Angular, Javascript, Typescript, JQuery.
+
+Contains the modules: -User Management
 
 -Customer Management
 
@@ -26,4 +30,4 @@ Pharmaceutical Management System currently developed with .NET 6, Swagger, Entit
 
 -Custom CRM
 
-Update: snarvasta 150722
+Update: snarvasta 270223
