@@ -3,7 +3,6 @@ import DataTable from 'react-data-table-component';
 import { Card, CardBody, CardHeader, Button, Modal, ModalHeader, ModalBody, Label, Input, FormGroup, ModalFooter, Row, Col } from "reactstrap"
 import Swal from 'sweetalert2'
 
-
 const modeloProducto = {
     idProducto :0,
     codigo :"",
@@ -14,7 +13,6 @@ const modeloProducto = {
     precio: 0,
     esActivo: true
 }
-
 
 const Producto = () => {
 
@@ -42,8 +40,6 @@ const Producto = () => {
             ...producto,
             [e.target.name]: value
         })
-
-
     }
 
     const obtenerCategorias = async () => {
@@ -110,14 +106,14 @@ const Producto = () => {
                 <>
                     <Button color="primary" size="sm" className="mr-2"
                         onClick={() => abrirEditarModal(row)}
-                    >
-                        <i className="fas fa-pen-alt"></i>
+                    > 
+                        <img src={"./imagen/editar.png"} />
                     </Button>
 
                     <Button color="danger" size="sm"
                         onClick={() => eliminarProducto(row.idProducto)}
                     >
-                        <i className="fas fa-trash-alt"></i>
+                        <img src={"./imagen/eliminar.png"} />
                     </Button>
                 </>
             ),
