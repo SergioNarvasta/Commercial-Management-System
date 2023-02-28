@@ -187,7 +187,7 @@ const Producto = () => {
         } else {
 
             Swal.fire(
-                'Opp!',
+                'Algo salio mal!',
                 'No se pudo guardar.',
                 'warning'
             )

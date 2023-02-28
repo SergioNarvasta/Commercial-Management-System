@@ -21,7 +21,7 @@ namespace ReactVentas.Models
         public decimal ImpuestoTotal { get; set; }
         public decimal Total { get; set; }
 
-        public virtual Usuario? IdUsuarioNavigation { get; set; }
+        public virtual Usuario IdUsuarioNavigation { get; set; }
         public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
     }
 }

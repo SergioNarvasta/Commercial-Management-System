@@ -20,7 +20,6 @@ const HistorialVenta = () => {
 
     const buscarVenta = () => {
         let options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-
         let _fechaInicio = fechaInicio.toLocaleDateString('es-PE', options)
         let _fechaFin = fechaFin.toLocaleDateString('es-PE', options)
 
@@ -32,7 +31,6 @@ const HistorialVenta = () => {
                 var data = dataJson;
                 if (data.length < 1) {
                     Swal.fire(
-                        'Opps!',
                         'No se encontraron resultados',
                         'warning'
                     )

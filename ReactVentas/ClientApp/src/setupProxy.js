@@ -5,7 +5,7 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
   env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'http://localhost:32214';
 
 const context =  [
-  "/weatherforecast",
+
   "/api/rol",
   "/api/categoria",
   "/api/usuario",

@@ -22,18 +22,14 @@ namespace ReactVentas.Controllers
         public async Task<IActionResult> Dashboard()
         {
             DtoDashboard config = new DtoDashboard();
-
-            DateTime fecha = DateTime.Now;
-            DateTime fecha2 = DateTime.Now;
-            fecha = fecha.AddDays(-30);
-            fecha2 = fecha2.AddDays(-7);
+            DateTime fecha = DateTime.Now;  DateTime fecha2 = DateTime.Now;
+            fecha = fecha.AddDays(-30);     fecha2 = fecha2.AddDays(-7);
             try
             {
                 config.TotalVentas = _context.Venta.Where(v => v.FechaRegistro >= fecha).Count().ToString();
                 config.TotalIngresos = _context.Venta.Where(v => v.FechaRegistro >= fecha).Sum(v => v.Total).ToString();
                 config.TotalProductos = _context.Productos.Count().ToString();
                 config.TotalCategorias = _context.Categoria.Count().ToString();
-
 
                 config.ProductosVendidos = (from p in _context.Productos
                            join d in _context.DetalleVenta on p.IdProducto equals d.IdProducto
@@ -42,8 +38,8 @@ namespace ReactVentas.Controllers
                            select new DtoProductoVendidos { Producto = g.Key, Total = g.Count().ToString()}).Take(4).ToList();
 
                 config.VentasporDias = (from v in _context.Venta
-                            where v.FechaRegistro.Value.Date >= fecha2.Date
-                            group v by v.FechaRegistro.Value.Date into g
+                            where v.FechaRegistro >= fecha2.Date
+                            group v by v.FechaRegistro into g
                             orderby g.Key ascending
                             select new DtoVentasDias { Fecha = g.Key.ToString("dd/MM/yyyy"), Total = g.Count().ToString() }).ToList();
 

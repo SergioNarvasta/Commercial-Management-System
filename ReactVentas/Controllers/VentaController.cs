@@ -114,9 +114,9 @@ namespace ReactVentas.Controllers
                         .Include(u => u.IdUsuarioNavigation)
                         .Include(d => d.DetalleVenta)
                         .ThenInclude(p => p.IdProductoNavigation)
-                        .Where(v => v.FechaRegistro.Value.Date >= _fechainicio.Date && v.FechaRegistro.Value.Date <= _fechafin.Date)
+                        .Where(v => v.FechaRegistro >= _fechainicio.Date && v.FechaRegistro <= _fechafin.Date)
                         .Select( v=> new DtoHistorialVenta() { 
-                            FechaRegistro =  v.FechaRegistro.Value.ToString("dd/MM/yyyy"),
+                            FechaRegistro =  v.FechaRegistro.ToString("dd/MM/yyyy"),
                             NumeroDocumento = v.NumeroDocumento,
                             TipoDocumento = v.TipoDocumento,
                             DocumentoCliente = v.DocumentoCliente,
@@ -143,7 +143,7 @@ namespace ReactVentas.Controllers
                         .Where(v => v.NumeroDocumento == numeroVenta)
                         .Select(v => new DtoHistorialVenta()
                         {
-                            FechaRegistro = v.FechaRegistro.Value.ToString("dd/MM/yyyy"),
+                            FechaRegistro = v.FechaRegistro.ToString("dd/MM/yyyy"),
                             NumeroDocumento = v.NumeroDocumento,
                             TipoDocumento = v.TipoDocumento,
                             DocumentoCliente = v.DocumentoCliente,
@@ -189,10 +189,10 @@ namespace ReactVentas.Controllers
                 lista_venta = (from v in _context.Venta
                                join d in _context.DetalleVenta on v.IdVenta equals d.IdVenta
                                join p in _context.Productos on d.IdProducto equals p.IdProducto
-                               where v.FechaRegistro.Value.Date >= _fechainicio.Date && v.FechaRegistro.Value.Date <= _fechafin.Date
+                               where v.FechaRegistro >= _fechainicio.Date && v.FechaRegistro <= _fechafin.Date
                                select new DtoReporteVenta()
                                  {
-                                     FechaRegistro = v.FechaRegistro.Value.ToString("dd/MM/yyyy"),
+                                     FechaRegistro = v.FechaRegistro.ToString("dd/MM/yyyy"),
                                      NumeroDocumento = v.NumeroDocumento,
                                      TipoDocumento = v.TipoDocumento,
                                      DocumentoCliente = v.DocumentoCliente,
@@ -205,9 +205,6 @@ namespace ReactVentas.Controllers
                                      Precio = d.Precio.ToString(),
                                      Total = d.Total.ToString()
                                  }).ToList();
-
-
-
                 return StatusCode(StatusCodes.Status200OK, lista_venta);
             }
             catch (Exception ex)

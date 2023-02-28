@@ -31,14 +31,13 @@ const NavBar = () => {
                 <div className="sidebar-brand-icon">
                     <i className="fas fa-desktop"></i>
                 </div>
-                <div className="sidebar-brand-text mx-3">Mi Tienda</div>
+                <div className="sidebar-brand-text mx-3">Sistema de Gestion Comercial</div>
             </Link>
-
-
+            
             <hr className="sidebar-divider my-0" />
 
             {
-                (dataUser.idRolNavigation.descripcion == "Administrador") &&
+                (dataUser.idRolNavigation.descripcion === "Administrador") &&
                 <li className="nav-item">
                     <NavLink to="/dashboard" className="nav-link" >
                         <i className="fas fa-fw fa-tachometer-alt"></i>
@@ -50,7 +49,7 @@ const NavBar = () => {
 
             <hr className="sidebar-divider" />
             {
-                (dataUser.idRolNavigation.descripcion == "Administrador") &&
+                (dataUser.idRolNavigation.descripcion === "Administrador") &&
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsuario"
                         aria-expanded="true" aria-controls="collapseUsuario">
@@ -66,7 +65,7 @@ const NavBar = () => {
             }
             
             {
-                (dataUser.idRolNavigation.descripcion == "Administrador") &&
+                (dataUser.idRolNavigation.descripcion === "Administrador") &&
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventario"
                         aria-expanded="true" aria-controls="collapseInventario">
@@ -100,7 +99,7 @@ const NavBar = () => {
             </li>
 
 
-            {(dataUser.idRolNavigation.descripcion == "Administrador") &&
+            {(dataUser.idRolNavigation.descripcion === "Administrador") &&
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReporte"
                         aria-expanded="true" aria-controls="collapseReporte">
@@ -116,8 +115,6 @@ const NavBar = () => {
                 </li>
             }
             
-
-
             <hr className="sidebar-divider d-none d-md-block" />
 
             <div className="text-center d-none d-md-inline">
