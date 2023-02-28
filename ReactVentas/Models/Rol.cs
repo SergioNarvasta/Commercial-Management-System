@@ -11,9 +11,9 @@ namespace ReactVentas.Models
         }
 
         public int IdRol { get; set; }
-        public string? Descripcion { get; set; }
-        public bool? EsActivo { get; set; }
-        public DateTime? FechaRegistro { get; set; }
+        public string Descripcion { get; set; }
+        public bool EsActivo { get; set; }
+        public DateTime FechaRegistro { get; set; }
 
         public virtual ICollection<Usuario> Usuarios { get; set; }
     }
