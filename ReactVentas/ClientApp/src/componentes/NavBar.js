@@ -15,13 +15,11 @@ const modelo = {
 const NavBar = () => {
 
     const { user} = useContext(UserContext);
-
     const [dataUser, setDataUser] = useState(modelo)
 
     useEffect(() => {
         let dt = JSON.parse(user)
         setDataUser(dt)
-
     }, [])
     return (
         
@@ -29,7 +27,7 @@ const NavBar = () => {
 
             <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                 <div className="sidebar-brand-icon">
-                    <i className="fas fa-desktop"></i>
+                <img src={"./imagen/pantalla-curva.png"} />
                 </div>
                 <div className="sidebar-brand-text mx-3">Sistema de Gestion Comercial</div>
             </Link>
@@ -37,7 +35,7 @@ const NavBar = () => {
             <hr className="sidebar-divider my-0" />
 
             {
-                (dataUser.idRolNavigation.descripcion === "Administrador") &&
+                (dataUser.idRolNavigation.descripcion === "Administrador" ) &&
                 <li className="nav-item">
                     <NavLink to="/dashboard" className="nav-link" >
                         <i className="fas fa-fw fa-tachometer-alt"></i>
@@ -46,7 +44,6 @@ const NavBar = () => {
                 </li>
             }
            
-
             <hr className="sidebar-divider" />
             {
                 (dataUser.idRolNavigation.descripcion === "Administrador") &&

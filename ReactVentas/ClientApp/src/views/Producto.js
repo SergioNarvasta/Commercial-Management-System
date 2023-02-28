@@ -65,7 +65,6 @@ const Producto = () => {
         obtenerProductos();
     }, [])
 
-
     const columns = [
         {
             name: 'Codigo',
