@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Models
+namespace ReactVentasa.Models
 {
     public class TipoComprobante
     {
@@ -12,7 +12,7 @@ namespace Pharmacy.Models
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]
         public string Descripcion { get; set; }
 
-        public virtual ICollection<Venta> Venta { get; set; }
+        //public virtual ICollection<Venta> Venta { get; set; }
 
     }
 }

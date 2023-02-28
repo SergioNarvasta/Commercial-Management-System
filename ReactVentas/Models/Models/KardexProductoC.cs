@@ -1,10 +1,10 @@
-﻿namespace Pharmacy.Models
+﻿namespace ReactVentas.Models
 {
     public class KardexProductoC
     {
         
        public int IdKardexProductoC { get; set; }
 
-       public string ?Lote { get; set; }
+       public string Lote { get; set; }
     }
 }

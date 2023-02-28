@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Models
+namespace ReactVentas.Models
 {
     public class Ingreso
     {
@@ -14,7 +14,7 @@ namespace Pharmacy.Models
 
         public int CodUsuario { get; set; } 
         
-        public virtual Usuario ?Usuario  { get; set; }
+        public virtual Usuario Usuario  { get; set; }
 
         public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }  
 

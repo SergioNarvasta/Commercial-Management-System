@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Models
+namespace ReactVentas.Models
 {
-    public class DetalleVenta
+    public class DetalleVenta_Compl
     {
         [Key]
         public int CodDetVenta { get; set; }
@@ -13,8 +13,6 @@ namespace Pharmacy.Models
         public Double IGV { get; set; }
 
         public int CodProducto { get; set; }
-        public virtual Producto Producto { get; set; }
         public int CodVenta { get; set; }
-        public virtual Venta Venta { get; set; }
     }
 }

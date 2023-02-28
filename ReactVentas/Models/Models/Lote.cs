@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Models
+namespace ReactVentas.Models
 {
     public class Lote
     {
@@ -9,7 +9,7 @@ namespace Pharmacy.Models
             
         public DateTime FechaVen { get; set; }
         
-        public string ?RegSanit { get; set; }
+        public string RegSanit { get; set; }
 
         public ICollection<Producto> Producto { get; set; }
     }

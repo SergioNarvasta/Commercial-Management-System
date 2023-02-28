@@ -1,4 +1,4 @@
-﻿namespace Pharmacy.Models
+﻿namespace ReactVentas.Models
 {
     public class KardexProductoLote
     {

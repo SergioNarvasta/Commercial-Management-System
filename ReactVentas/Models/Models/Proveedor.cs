@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Models
+namespace ReactVentas.Models
 {
     public class Proveedor
     {
@@ -18,7 +18,7 @@ namespace Pharmacy.Models
         [Required]
         [MaxLength(50)]
         [Display(Name ="Descripcion")]
-        public string ?Nombre { get; set; }
+        public string Nombre { get; set; }
 
         public DateTime FechReg { get; set; } = DateTime.Now;
 

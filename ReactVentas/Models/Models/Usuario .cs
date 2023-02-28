@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Pharmacy.Models
+namespace ReactVentas.Models
 {
-    public class Usuario
+    public class Usuario_Comp
     {
         [Key]
         public int CodUsuario { get; set; }
@@ -14,12 +14,12 @@ namespace Pharmacy.Models
         [Display(Name = "Apellidos Completos")]
         [Required(ErrorMessage = "Debe de ingresar los apellidos")]
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]
-        public string ?Apellidos { get; set; }
+        public string Apellidos { get; set; }
 
         [Display(Name = "Nombres")]
         [Required(ErrorMessage = "Debe de ingresar sus nombres")]
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]
-        public string ?Nombres   { get; set; }
+        public string Nombres   { get; set; }
 
         [Display(Name = "Usuario")]
         [Required(ErrorMessage = "Debe de ingresar ")]
@@ -34,7 +34,7 @@ namespace Pharmacy.Models
         [Display(Name = "Documento de Identificacion")]
         [Required(ErrorMessage = "Debe de ingresar su documento ")]
         [MaxLength(9, ErrorMessage = "El campo no debe de tener mas de 9 caracteres")]
-        public string ?DNI { get; set; }
+        public string DNI { get; set; }
 
         [Required(ErrorMessage = "Debe de ingresar el estado ")]
         public Boolean Estado { get; set; } //Activo o Inactivo
@@ -45,7 +45,7 @@ namespace Pharmacy.Models
 
         // Foreign Key
         public int IdTipoUsuario { get; set; }
-        public virtual TipoUsuario  ?TipoUsuario { get; set; }
+        public virtual TipoUsuario  TipoUsuario { get; set; }
 
         public virtual ICollection<Ingreso> Ingreso { get; set; }
         public virtual ICollection<Venta> Venta { get; set; }

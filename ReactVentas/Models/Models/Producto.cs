@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pharmacy.Models
+namespace ReactVentas.Models
 {
-    public class Producto
+    public class Producto_Compl
     {
         [Key]
         public int CodProducto { get; set; }
