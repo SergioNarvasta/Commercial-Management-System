@@ -54,7 +54,6 @@ namespace ReactVentas.Controllers
             try
             {
                 string numeroDocumento = "";
-
                 XElement productos = new XElement("Productos");
                 foreach (DtoProducto item in request.listaProductos)
                 {
@@ -161,16 +160,12 @@ namespace ReactVentas.Controllers
                             }).ToList()
                         }).ToListAsync();
                 }
-
-
                 return StatusCode(StatusCodes.Status200OK, lista_venta);
             }
             catch (Exception ex) {
                 var str = ex.Message;
                 return StatusCode(StatusCodes.Status500InternalServerError, lista_venta);
             }
-            
-
         }
 
         [HttpGet]

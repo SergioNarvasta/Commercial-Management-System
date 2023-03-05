@@ -6,24 +6,12 @@ import { useContext, useState } from "react";
 import "./css/Venta.css"
 import { UserContext } from "../context/UserProvider";
 
-const modelo = {
-    nombre: "",
-    correo: "",
-    idRolNavigation: {
-        idRol: 0,
-        descripcion: ""
-    }
-}
-
 const Venta = () => {
     const { user } = useContext(UserContext)
-
     const [a_Productos, setA_Productos] = useState([])
     const [a_Busqueda, setA_Busqueda] = useState("")
-
     const [documentoCliente, setDocumentoCliente] = useState("")
     const [nombreCliente, setNombreCliente] = useState("")
-
     const [tipoDocumento,setTipoDocumento] = useState("Boleta")
     const [productos, setProductos] = useState([])
     const [total, setTotal] = useState(0)
@@ -42,7 +30,6 @@ const Venta = () => {
 
     //para obtener la lista de sugerencias
     const onSuggestionsFetchRequested = ({ value }) => {
-
         const api = fetch("api/venta/Productos/" + value)
             .then((response) => {
                 return response.ok ? response.json() : Promise.reject(response);
@@ -51,10 +38,9 @@ const Venta = () => {
                 setA_Productos(dataJson)
             }).catch((error) => {
                 console.log("No se pudo obtener datos, mayor detalle: ", error)
-            })
-        
+            })      
     }
-
+    
     //funcion que nos permite borrar las sugerencias
     const onSuggestionsClearRequested = () => {
         setA_Productos([])
@@ -62,11 +48,10 @@ const Venta = () => {
 
     //devuelve el texto que se mostrara en la caja de texto del autocomplete cuando seleccionas una sugerencia (item)
     const getSuggestionValue = (sugerencia) => {
-
         return sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion
     }
 
-    //como se debe mostrar las sugerencias - codigo htmlf
+    //como se debe mostrar las sugerencias - codigo html
     const renderSuggestion = (sugerencia) => (
         <span>
             {sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion}
@@ -98,15 +83,12 @@ const Venta = () => {
             cancelButtonText: 'Volver',
             showLoaderOnConfirm: true,
             preConfirm: (inputValue) => {
-
-                
                 if (isNaN(parseFloat(inputValue))) {
                     setA_Busqueda("")
                     Swal.showValidationMessage(
                         "Debe ingresar un valor númerico"
                     )
                 } else {
-
                     let producto = {
                         idProducto: suggestion.idProducto,
                         descripcion: suggestion.descripcion,
@@ -121,8 +103,6 @@ const Venta = () => {
                     setProductos((anterior) => [...anterior, producto])
                     calcularTotal(arrayProductos)
                 }
-                
-
             },
             allowOutsideClick: () => !Swal.isLoading()
 
@@ -136,11 +116,8 @@ const Venta = () => {
     }
 
     const eliminarProducto = (id) => {
-
         let listaproductos = productos.filter(p => p.idProducto != id)
-
         setProductos(listaproductos)
-
         calcularTotal(listaproductos)
     }
 
@@ -150,29 +127,23 @@ const Venta = () => {
         let imp = 0;
 
         if (arrayProductos.length > 0) {
-
             arrayProductos.forEach((p) => {
                 t = p.total + t
             })
-
             st = t / (1.18)
             imp = t - st
         }
 
         //Monto Base = (Monto con IGV) / (1.18)
-
         //IGV = (Monto con IGV) – (Monto Base)
-
         setSubTotal(st.toFixed(2))
         setIgv(imp.toFixed(2))
         setTotal(t.toFixed(2))
     }
 
     const terminarVenta = () => {
-
         if (productos.length < 1) {
             Swal.fire(
-                'Opps!',
                 'No existen productos',
                 'error'
             )
@@ -189,7 +160,6 @@ const Venta = () => {
             total:parseFloat(total),
             listaProductos: productos
         }
-
 
         const api = fetch("api/venta/Registrar", {
             method: 'POST',
@@ -209,22 +179,18 @@ const Venta = () => {
                 'Numero de venta : ' + data.numeroDocumento,
                 'success'
             )
-
         }).catch((error) => {
             Swal.fire(
-                'Opps!',
                 'No se pudo crear la venta',
                 'error'
             )
             console.log("No se pudo enviar la venta ", error)
         })
-
     }
 
     return (
         <Row>
             <Col sm={8}>
-
                 <Row className="mb-2">
                     <Col sm={12}>
                         <Card>
@@ -307,21 +273,17 @@ const Venta = () => {
                                                                 <td>{item.total}</td>
                                                             </tr>
                                                         ))
-                                                    )
-
-                                                    
+                                                    )                            
                                                 }
                                             </tbody>
                                         </Table>
                                     </Col>
-                                    
                                 </Row>
                             </CardBody>
                         </Card>
                     </Col>
                 </Row>
             </Col>
-
             <Col sm={4}>
                 <Row className="mb-2">
                     <Col sm={12}>
@@ -364,10 +326,7 @@ const Venta = () => {
                                             <Input disabled value={total} />
                                         </InputGroup>
                                     </Col>
-                                </Row>
-                                
-                                
-                                
+                                </Row>              
                             </CardBody>
                         </Card>
                     </Col>
