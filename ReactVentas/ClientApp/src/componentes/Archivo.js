@@ -1,6 +1,4 @@
 import { useState } from "react";
-import './Proyectos.css';
-import axios from 'axios';
 
 const CargaArchivo = () =>{
    const [archivos,setArchivos]= useState(null);
@@ -33,11 +31,13 @@ const CargaArchivo = () =>{
    return(   
     <div className="Archivos">
         <br></br>
-        <input type="file" name="files" multiple onChange={()=>subirArchivos(e.target.files)} />
-        <button className="btn btn-sucess">Cargar Archivo</button>
+        <input type="file" name="files" multiple 
+            onChange={()=>subirArchivos(e.target.files)} />
+        <button className="btn btn-sucess" 
+            onClick={()=>insertarArchivos()}>Cargar Archivo</button>
     
     </div>
-   )
+   );
 }
 
 export default CargaArchivo;
