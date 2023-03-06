@@ -116,7 +116,7 @@ const Venta = () => {
     }
 
     const eliminarProducto = (id) => {
-        let listaproductos = productos.filter(p => p.idProducto != id)
+        let listaproductos = productos.filter(p => p.idProducto !== id)
         setProductos(listaproductos)
         calcularTotal(listaproductos)
     }

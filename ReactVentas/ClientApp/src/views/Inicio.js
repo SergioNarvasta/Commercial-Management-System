@@ -32,7 +32,7 @@ const Inicio = () => {
             <Row>
                 <Col sm={3}>
                     <div className="card">
-                        <img className="card-img-top" src={"./imagen/Foto003.jpg"} alt="Card image cap" />
+                        <img className="card-img-top" src={"./imagen/Foto003.jpg"} />
                     </div>
                 </Col>
                 <Col sm={3}>

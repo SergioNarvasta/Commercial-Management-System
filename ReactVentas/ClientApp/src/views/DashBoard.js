@@ -125,7 +125,7 @@ const DashBoard = () => {
                                 <div className="col mr-2">
                                     <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                         Cantidad de Ventas</div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{ (config.totalVentas!= undefined) ? config.totalVentas : "0" }</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{ (config.totalVentas!== undefined) ? config.totalVentas : "0" }</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-shopping-basket fa-2x text-gray-300"></i>
@@ -142,7 +142,7 @@ const DashBoard = () => {
                                 <div className="col mr-2">
                                     <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
                                         Ingresos por Ventas</div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{(config.totalIngresos != undefined) ? config.totalIngresos : "0"}</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{(config.totalIngresos !== undefined) ? config.totalIngresos : "0"}</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -162,7 +162,7 @@ const DashBoard = () => {
                                     </div>
                                     <div className="row no-gutters align-items-center">
                                         <div className="col-auto">
-                                            <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800">{(config.totalProductos != undefined) ? config.totalProductos : "0"}</div>
+                                            <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800">{(config.totalProductos !== undefined) ? config.totalProductos : "0"}</div>
                                         </div>
                                         <div className="col">
                                            
@@ -185,7 +185,7 @@ const DashBoard = () => {
                                     <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                         Total Categorias
                                     </div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{(config.totalCategorias != undefined) ? config.totalCategorias : "0"}</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{(config.totalCategorias !== undefined) ? config.totalCategorias : "0"}</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-tags fa-2x text-gray-300"></i>

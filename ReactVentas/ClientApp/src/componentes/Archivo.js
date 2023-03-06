@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CargaArchivo = () =>{
+const Archivo = () =>{
    const [archivos,setArchivos]= useState(null);
    const subirArchivos=e=>{
     setArchivos(e);
@@ -22,17 +22,13 @@ const CargaArchivo = () =>{
       }).catch(error=>{
         console.log(error);
       })
-
-      if(response.ok){
-          console.log("Registrado con exito");
-      }
    }
    
    return(   
     <div className="Archivos">
         <br></br>
         <input type="file" name="files" multiple 
-            onChange={()=>subirArchivos(e.target.files)} />
+            onChange={(e)=>subirArchivos(e.target.files)} />
         <button className="btn btn-sucess" 
             onClick={()=>insertarArchivos()}>Cargar Archivo</button>
     
@@ -40,4 +36,4 @@ const CargaArchivo = () =>{
    );
 }
 
-export default CargaArchivo;
+export default Archivo;

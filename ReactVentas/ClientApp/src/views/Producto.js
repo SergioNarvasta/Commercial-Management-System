@@ -28,10 +28,10 @@ const Producto = () => {
 
         let value;
 
-        if (e.target.name == "idCategoria") {
+        if (e.target.name === "idCategoria") {
             value = e.target.value
-        } else if (e.target.name == "esActivo") {
-            value = (e.target.value == "true" ? true : false)
+        } else if (e.target.name === "esActivo") {
+            value = (e.target.value === "true" ? true : false)
         } else {
             value = e.target.value;
         }
@@ -155,7 +155,7 @@ const Producto = () => {
         delete producto.idCategoriaNavigation;
 
         let response;
-        if (producto.idProducto == 0) {
+        if (producto.idProducto === 0) {
             response = await fetch("api/producto/Guardar", {
                 method: 'POST',
                 headers: {

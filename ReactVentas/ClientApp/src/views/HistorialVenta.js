@@ -75,7 +75,7 @@ const HistorialVenta = () => {
                                     </FormGroup>
                                 </Col>
                                 {
-                                    (buscarPor == "fecha") ? (
+                                    (buscarPor === "fecha") ? (
                                         <>
                                             <Col sm={3}>
                                                 <FormGroup>
@@ -252,7 +252,7 @@ const HistorialVenta = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                        (detalleVenta.detalle == undefined) ? (
+                                        (detalleVenta.detalle === undefined) ? (
                                             <tr><td colSpan={4}>Sin productos</td></tr>
                                         ) : (
                                             detalleVenta.detalle.map((item) => (

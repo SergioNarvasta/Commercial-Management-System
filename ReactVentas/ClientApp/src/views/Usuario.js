@@ -28,10 +28,10 @@ const Usuario = () => {
 
         let value;
 
-        if (e.target.name == "idRol") {
+        if (e.target.name === "idRol") {
             value = e.target.value
-        } else if (e.target.name == "esActivo") {
-            value = (e.target.value == "true" ? true : false)
+        } else if (e.target.name === "esActivo") {
+            value = (e.target.value === "true" ? true : false)
         } else {
             value = e.target.value;
         }
@@ -156,7 +156,7 @@ const Usuario = () => {
         delete usuario.idRolNavigation;
 
         let response;
-        if (usuario.idUsuario == 0) {
+        if (usuario.idUsuario === 0) {
             response = await fetch("api/usuario/Guardar", {
                 method: 'POST',
                 headers: {

@@ -32,7 +32,7 @@ const Login = () => {
             return response.ok ? response.json() : Promise.reject(response);
         })
         .then((dataJson) => {
-            if (dataJson.idUsuario == 0) {
+            if (dataJson.idUsuario === 0) {
                 Swal.fire(
                     'Opps!',
                     'No se encontro el usuario',

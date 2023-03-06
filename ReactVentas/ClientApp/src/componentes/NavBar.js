@@ -48,7 +48,7 @@ const NavBar = () => {
             {
                 (dataUser.idRolNavigation.descripcion === "Administrador") &&
                 <li className="nav-item">
-                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsuario"
+                    <a className="nav-link collapsed" data-toggle="collapse" data-target="#collapseUsuario"
                         aria-expanded="true" aria-controls="collapseUsuario">
                         <i className="fas fa-fw fa-cog"></i>
                         <span>Administracion</span>
@@ -56,8 +56,11 @@ const NavBar = () => {
                     <div id="collapseUsuario" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div className="bg-white py-2 collapse-inner rounded">
                             <NavLink to="/usuario" className="collapse-item">Usuarios</NavLink>
+                            <NavLink to="/usuario" className="collapse-item">Proveedores</NavLink>
+                            <NavLink to="/usuario" className="collapse-item">Clientes</NavLink>
                         </div>
                     </div>
+                    
                 </li>
             }
             
@@ -107,6 +110,22 @@ const NavBar = () => {
                         data-parent="#accordionSidebar">
                         <div className="bg-white py-2 collapse-inner rounded">
                             <NavLink to="/reporteventa" className="collapse-item">Reporte Venta</NavLink>
+                        </div>
+                    </div>
+                </li>
+            }
+
+            {(dataUser.idRolNavigation.descripcion === "Administrador") &&
+                <li className="nav-item">
+                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLogo"
+                        aria-expanded="true" aria-controls="collapseLogo">
+                        <i className="fas fa-fw fa-chart-area"></i>
+                        <span>Archivos</span>
+                    </a>
+                    <div id="collapseLogo" className="collapse" aria-labelledby="headingUtilities"
+                        data-parent="#accordionSidebar">
+                        <div className="bg-white py-2 collapse-inner rounded">
+                            <NavLink to="/archivo" className="collapse-item">Logo</NavLink>
                         </div>
                     </div>
                 </li>

@@ -13,6 +13,7 @@ import ReporteVenta from './views/ReporteVenta';
 import Usuario from './views/Usuario';
 import Venta from './views/Venta';
 import Login from './views/Login';
+import Archivo from './componentes/Archivo';
 
 import UserProvider from "./context/UserProvider"
 import VerificarUsuario from './componentes/VerificarUsuario';
@@ -41,6 +42,7 @@ root.render(
                     <Route path='venta' element={<VerificarUsuario> <Venta /> </VerificarUsuario>} />
                     <Route path='historialventa' element={<VerificarUsuario> <HistorialVenta /> </VerificarUsuario>} />
                     <Route path='reporteventa' element={<VerificarUsuario > <ReporteVenta /> </VerificarUsuario>} />
+                    <Route path='archivo' element={<VerificarUsuario > <Archivo /> </VerificarUsuario>} />
 
                 </Route>
                 <Route path='*' element={<NotFound />} />
