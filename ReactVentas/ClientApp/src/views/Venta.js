@@ -48,13 +48,13 @@ const Venta = () => {
 
     //devuelve el texto que se mostrara en la caja de texto del autocomplete cuando seleccionas una sugerencia (item)
     const getSuggestionValue = (sugerencia) => {
-        return sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion
+        return sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion + " -Stock :"+sugerencia.stock
     }
 
     //como se debe mostrar las sugerencias - codigo html
     const renderSuggestion = (sugerencia) => (
         <span>
-            {sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion}
+            {sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion + " -Stock :"+sugerencia.stock}
         </span>
      )
 

@@ -17,7 +17,7 @@ const Categoria = () => {
     const [verModal, setVerModal] = useState(false);
 
     const handleChange = (e) => {
-        let value = e.target.nodeName === "SELECT" ? (e.target.value == "true" ? true : false) : e.target.value;
+        let value = e.target.nodeName === "SELECT" ? (e.target.value === "true" ? true : false) : e.target.value;
 
         setCategoria({
             ...categoria,
@@ -113,7 +113,7 @@ const Categoria = () => {
     const guardarCambios = async () => {
 
         let response;
-        if (categoria.idCategoria == 0) {
+        if (categoria.idCategoria === 0) {
             response = await fetch("api/categoria/Guardar", {
                 method: 'POST',
                 headers: {

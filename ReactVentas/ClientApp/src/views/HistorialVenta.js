@@ -1,21 +1,17 @@
 ﻿
-import { Card, CardBody, CardHeader, Col, FormGroup, Input, InputGroup, InputGroupText, Label, Row, Table, Button,Modal,ModalHeader,ModalBody,ModalFooter } from "reactstrap";
+import { Card, CardBody, CardHeader, Col, FormGroup, Input, Label, Row, Table, Button,Modal,ModalHeader,ModalBody,ModalFooter } from "reactstrap";
 import DatePicker from "react-datepicker";
 import Swal from 'sweetalert2'
-
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
-
 
 const HistorialVenta = () => {
     const [fechaInicio, setFechaInicio] = useState(new Date());
     const [fechaFin, setFechaFin] = useState(new Date());
     const [nroVenta,setNumeroVenta] = useState("")
     const [buscarPor, setBuscarPor] = useState("fecha")
-
     const [verModal,setVerModal] = useState(false)
     const [detalleVenta, setDetalleVenta] = useState({})
-
     const [ventas,setVentas] = useState([])
 
     const buscarVenta = () => {
@@ -23,7 +19,7 @@ const HistorialVenta = () => {
         let _fechaInicio = fechaInicio.toLocaleDateString('es-PE', options)
         let _fechaFin = fechaFin.toLocaleDateString('es-PE', options)
 
-        const api = fetch(`api/venta/Listar?buscarPor=${buscarPor}&numeroVenta=${nroVenta}&fechaInicio=${_fechaInicio}&fechaFin=${_fechaFin}`)
+        fetch(`api/venta/Listar?buscarPor=${buscarPor}&numeroVenta=${nroVenta}&fechaInicio=${_fechaInicio}&fechaFin=${_fechaFin}`)
             .then((response) => {
                 return response.ok ? response.json() : Promise.reject(response);
             })
@@ -39,20 +35,15 @@ const HistorialVenta = () => {
             }).catch((error) => {
                 setVentas([]);
                 Swal.fire(
-                    'Opps!',
                     'No se pudo encontrar información',
                     'error'
                 )
             })
-
     }
-
     const mostrarModal = (data) => {
         setDetalleVenta(data)
         setVerModal(!verModal);
     }
-
-    
     return (
         <>
             <Row>

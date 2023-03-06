@@ -20,6 +20,7 @@ namespace ReactVentas.Controllers
             _context = context;
 
         }
+
         [HttpGet]
         [Route("Lista")]
         public async Task<IActionResult> Lista()
@@ -51,7 +52,7 @@ namespace ReactVentas.Controllers
                         var filePath = "C:\\Users\\snarv\\OneDrive\\Documentos\\2.PROYECTOS\\PharmacySoft_Ventas\\PharmacySoft\\ReactVentas\\Files\\"+file.FileName;
                         using(var stream = System.IO.File.Create(filePath))
                         {
-                            file.CopyToAsync(stream);
+                           await file.CopyToAsync(stream);
                         }
                         double tamanio = file.Length;
                         tamanio = tamanio / 1000000;
@@ -66,19 +67,7 @@ namespace ReactVentas.Controllers
                         await file.CopyToAsync(ms);
                         Byte[] data = ms.ToArray();
                         String fileb64 = Convert.ToBase64String(data);
-                        /*Byte[] arrBytImages;
-                        using (System.IO.MemoryStream stmMemory = new System.IO.MemoryStream())
-	                    { 
-                            await file.CopyToAsync(stmMemory);
-                            using (var img = Image.FromStream(stmMemory))
-                            {
-                                img.Save(stmMemory, archivo.Archivo_Extension);
-	                    	    arrBytImages = stmMemory.ToArray();
-	                    	    stmMemory.Close();
-                            }
-	                    }*/ 
-                        //Byte[] bytes = File.ReadAllBytes(file);
-                        //String fileb64 = Convert.ToBase64String(bytes);
+
                         archivo.Archivo_Base64 = fileb64;
                         archivo.Aud_UsuCre = ""; //User Login
                         archivo.Aud_FecCre = DateTime.Now;
