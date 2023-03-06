@@ -21,7 +21,8 @@ namespace ReactVentas.Repositories
         {
            _context = context;
         }
-
+    
+    /*
         public async Task<IActionResult> RegistraCompra (DtoCompra request){
             string numeroDocumento = "";
                 XElement productos = new XElement("Productos");
@@ -53,7 +54,7 @@ namespace ReactVentas.Repositories
                     numeroDocumento = cmd.Parameters["nroDocumento"].Value.ToString();
                 }
 
-        }
+        }*/
 
     }
     
