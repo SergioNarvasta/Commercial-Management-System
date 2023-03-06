@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.IO;
+using System;
+using System.IO.Compression;
+using System.Text;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ReactVentas.Models;
+using System.Drawing;
 
 namespace ReactVentas.Controllers
 {
@@ -36,13 +41,14 @@ namespace ReactVentas.Controllers
         [Route("Guardar")]
         public async Task<IActionResult> Guardar([FromForm] List<IFormFile> files)
         {
+            List<Archivo> archivos = new List<Archivo>();
             try
             {
                 if(files.Count > 0)
                 {
-                    foreach(var files in files)
+                    foreach(var file in files)
                     {
-                        var filePath = "C:\Users\snarv\OneDrive\Documentos\2.PROYECTOS\PharmacySoft_Ventas\PharmacySoft\ReactVentas\Files"+file.FileName;
+                        var filePath = "C:\\Users\\snarv\\OneDrive\\Documentos\\2.PROYECTOS\\PharmacySoft_Ventas\\PharmacySoft\\ReactVentas\\Files\\"+file.FileName;
                         using(var stream = System.IO.File.Create(filePath))
                         {
                             file.CopyToAsync(stream);
@@ -53,7 +59,35 @@ namespace ReactVentas.Controllers
                         Archivo archivo = new Archivo();
                         archivo.Archivo_Extension = Path.GetExtension(file.FileName).Substring(1);
                         archivo.Archivo_Nombre = Path.GetFileNameWithoutExtension(file.FileName);
+                        archivo.Archivo_Ubicacion = filePath;
+                        archivo.Archivo_Tamanio = tamanio;
+                        archivo.Archivo_Estado = 1;
+                        using var ms = new System.IO.MemoryStream();
+                        await file.CopyToAsync(ms);
+                        Byte[] data = ms.ToArray();
+                        String fileb64 = Convert.ToBase64String(data);
+                        /*Byte[] arrBytImages;
+                        using (System.IO.MemoryStream stmMemory = new System.IO.MemoryStream())
+	                    { 
+                            await file.CopyToAsync(stmMemory);
+                            using (var img = Image.FromStream(stmMemory))
+                            {
+                                img.Save(stmMemory, archivo.Archivo_Extension);
+	                    	    arrBytImages = stmMemory.ToArray();
+	                    	    stmMemory.Close();
+                            }
+	                    }*/ 
+                        //Byte[] bytes = File.ReadAllBytes(file);
+                        //String fileb64 = Convert.ToBase64String(bytes);
+                        archivo.Archivo_Base64 = fileb64;
+                        archivo.Aud_UsuCre = ""; //User Login
+                        archivo.Aud_FecCre = DateTime.Now;
+                        archivo.Aud_UsuAct = "";
+                        archivo.Aud_FecAct = DateTime.Now;
+                        archivos.Add(archivo);
                     }
+                    _context.Archivo.AddRange(archivos);
+                    _context.SaveChanges();
                 }
                 return StatusCode(StatusCodes.Status200OK, "ok");
             }
@@ -63,6 +97,7 @@ namespace ReactVentas.Controllers
             }
         }
 
+        /*
         [HttpPut]
         [Route("Editar")]
         public async Task<IActionResult> Editar([FromBody] Producto request)
@@ -95,6 +130,6 @@ namespace ReactVentas.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
     }
 }

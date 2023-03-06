@@ -12,7 +12,8 @@ const context =  [
   "/api/producto",
   "/api/venta",
   "/api/utilidad",
-  "/api/session"
+  "/api/session",
+  "/api/archivo"
 ];
 
 module.exports = function(app) {

@@ -8,10 +8,10 @@ const CargaArchivo = () =>{
    const insertarArchivos=async()=>{
     const file = new FormData();
 
-    for(let index=0;index<archivos.length; index++){
+    for(let index=0; index<archivos.length; index++){
         file.append("files",archivos[index]);
     }
-    const response = await fetch("api/archivos",{
+    const response = await fetch("api/archivo",{
         method:'POST',
         headers: {
            'Content-Type':'application/json;charset=utf-8'

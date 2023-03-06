@@ -23,7 +23,9 @@ namespace ReactVentas.Controllers
             Usuario usuario = new Usuario();
             try
             {
-                usuario = _context.Usuarios.Include(u => u.IdRolNavigation).Where(u => u.Correo == request.correo && u.Clave == request.clave).FirstOrDefault();
+                usuario = _context.Usuarios.Include(u => u.IdRolNavigation)
+                            .Where(u => u.Correo == request.correo && u.Clave == request.clave)
+                            .FirstOrDefault();
 
                 if(usuario == null)
                     usuario = new Usuario();

@@ -14,9 +14,9 @@ namespace ReactVentas.Models
         public string  Archivo_Base64     {get;set;} 
 
         public string   Aud_UsuCre  {get;set;} 
-        public datetime Aud_FecCre  {get;set;} 
+        public DateTime Aud_FecCre  {get;set;} 
         public string   Aud_UsuAct  {get;set;} 
-        public datetime Aud_FecAct  {get;set;} 
+        public DateTime Aud_FecAct  {get;set;} 
           
     }
 }
