@@ -21,7 +21,7 @@ namespace ReactVentas.Controllers
 
         }
 
-        [HttpGet]
+     /*   [HttpGet]
         [Route("Lista")]
         public async Task<IActionResult> Lista()
         {
@@ -84,7 +84,7 @@ namespace ReactVentas.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }
+        }*/
 
         /*
         [HttpPut]

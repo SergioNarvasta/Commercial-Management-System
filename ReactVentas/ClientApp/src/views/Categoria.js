@@ -65,13 +65,13 @@ const Categoria = () => {
                     <Button color="primary" size="sm" className="mr-2"
                         onClick={() => abrirEditarModal(row) }
                     >
-                        <i className="fas fa-pen-alt"></i>
+                        <img src={"./imagen/editar.png"} />
                     </Button>
 
                     <Button color="danger" size="sm"
                         onClick={ () => eliminarCategoria(row.idCategoria)}
                     >
-                        <i className="fas fa-trash-alt"></i>
+                        <img src={"./imagen/eliminar.png"} />
                     </Button>
                 </>
             ),
