@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Pharmacy",
-    "\\Pharmacy\\Pharmacy",
-    "\\Pharmacy\\Pharmacy\\Data",
-    "\\Pharmacy\\Pharmacy\\Models"
+    "\\ReactVentas"
   ],
-  "SelectedNode": "\\Pharmacy\\Pharmacy\\Models\\Cliente.cs",
+  "SelectedNode": "\\ReactVentas\\ReactVentas.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -11,7 +11,7 @@ const Archivo = () =>{
     for(let index=0; index<archivos.length; index++){
         file.append("files",archivos[index]);
     }
-    const response = await fetch("api/archivo",{
+       const response = await fetch("api/archivo/Guardar",{
         method:'POST',
         headers: {
            'Content-Type':'application/json;charset=utf-8'

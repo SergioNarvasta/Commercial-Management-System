@@ -20,7 +20,7 @@ namespace ReactVentas.Controllers
             _context = context;
 
         }
-
+        
         [HttpGet]
         [Route("Lista")]
         public async Task<IActionResult> Lista()
