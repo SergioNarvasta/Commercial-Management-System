@@ -3,7 +3,6 @@ import DataTable from 'react-data-table-component';
 import { Card, CardBody, CardHeader, Button, Modal, ModalHeader, ModalBody, Label, Input, FormGroup, ModalFooter, Row, Col } from "reactstrap"
 import Swal from 'sweetalert2'
 
-
 const modeloUsuario = {
     idUsuario: 0,
     nombre : "",
@@ -23,11 +22,8 @@ const Usuario = () => {
     const [verModal, setVerModal] = useState(false);
 
     const handleChange = (e) => {
-
         console.log(e.target.value )
-
         let value;
-
         if (e.target.name === "idRol") {
             value = e.target.value
         } else if (e.target.name === "esActivo") {
@@ -41,7 +37,6 @@ const Usuario = () => {
             [e.target.name]: value
         })
     }
-
 
     const obtenerRoles = async () => {
         let response = await fetch("api/rol/Lista");
@@ -107,13 +102,13 @@ const Usuario = () => {
                     <Button color="primary" size="sm" className="mr-2"
                         onClick={() => abrirEditarModal(row)}
                     >
-                        <i className="fas fa-pen-alt"></i>
+                        <img src={"./imagen/editar.png"} />
                     </Button>
 
                     <Button color="danger" size="sm"
                         onClick={() => eliminarUsuario(row.idUsuario)}
                     >
-                        <i className="fas fa-trash-alt"></i>
+                        <img src={"./imagen/eliminar.png"} />
                     </Button>
                 </>
             ),
@@ -154,7 +149,6 @@ const Usuario = () => {
     const guardarCambios = async () => {
 
         delete usuario.idRolNavigation;
-
         let response;
         if (usuario.idUsuario === 0) {
             response = await fetch("api/usuario/Guardar", {
@@ -216,7 +210,6 @@ const Usuario = () => {
             }
         })
     }
-
 
     return (
         <>
