@@ -5,108 +5,49 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pharmacy
 build_property.RootNamespace = Pharmacy
-build_property.ProjectDir = D:\Docs_Sergio\Personal\PROYECTOS\PharmacySOft\Pharmacy\Pharmacy\
+build_property.ProjectDir = C:\Users\Consultor2015\Documents\SERGIO\RECURSOS\Sistema Gestion Comercial\Pharmacy\Pharmacy\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Docs_Sergio\Personal\PROYECTOS\PharmacySOft\Pharmacy\Pharmacy
+build_property.MSBuildProjectDirectory = C:\Users\Consultor2015\Documents\SERGIO\RECURSOS\Sistema Gestion Comercial\Pharmacy\Pharmacy
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Home/Index.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Home/Privacy.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Productos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Productos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Productos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Productos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Productos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Proveedores/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Proveedores/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Proveedores/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Proveedores/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Proveedores/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Shared/Error.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Ventas/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Ventas/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Ventas/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Ventas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Ventas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/_ViewImports.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/_ViewStart.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/PharmacySOft/Pharmacy/Pharmacy/Views/Shared/_Layout.cshtml]
+[C:/Users/Consultor2015/Documents/SERGIO/RECURSOS/Sistema Gestion Comercial/Pharmacy/Pharmacy/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-873r5iwzbd

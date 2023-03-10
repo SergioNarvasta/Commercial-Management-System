@@ -37,7 +37,7 @@ namespace ReactVentas.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, lista);
             }
         }
-
+        
         [HttpPost]
         [Route("Guardar")]
         public async Task<IActionResult> Guardar([FromForm] List<IFormFile> files)
@@ -86,7 +86,7 @@ namespace ReactVentas.Controllers
             }
         }*/
 
-        /*
+        
         [HttpPut]
         [Route("Editar")]
         public async Task<IActionResult> Editar([FromBody] Producto request)

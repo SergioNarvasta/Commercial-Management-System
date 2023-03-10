@@ -29,7 +29,7 @@ namespace ReactVentas.Models
         {
 
         }
-
+        /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Categoria>(entity =>
@@ -258,7 +258,7 @@ namespace ReactVentas.Models
 
             OnModelCreatingPartial(modelBuilder);
         }
-
+        */
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
