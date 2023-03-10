@@ -36,7 +36,8 @@ namespace ReactVentas.Controllers
                     Codigo = p.Codigo,
                     Marca = p.Marca,
                     Descripcion = p.Descripcion,
-                    Precio = p.Precio
+                    Precio = p.Precio,
+                    Stock = p.Stock
                 }).ToListAsync();
 
 

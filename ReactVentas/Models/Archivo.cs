@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ReactVentas.Models
 {
-    public class Archivo
+    public class Archivo : Audit
     {
         public int     Archivo_Id         {get;set;}
         public string  Archivo_Nombre     {get;set;}       
@@ -12,11 +12,6 @@ namespace ReactVentas.Models
         public string  Archivo_Ubicacion  {get;set;}  
         public int     Archivo_Estado     {get;set;}   
         public string  Archivo_Base64     {get;set;} 
-
-        public string   Aud_UsuCre  {get;set;} 
-        public DateTime Aud_FecCre  {get;set;} 
-        public string   Aud_UsuAct  {get;set;} 
-        public DateTime Aud_FecAct  {get;set;} 
           
     }
 }
