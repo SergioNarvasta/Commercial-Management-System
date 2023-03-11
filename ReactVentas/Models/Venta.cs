@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ReactVentas.Models
 {
-    public partial class Venta
+    public partial class Venta : Audit
     {
         public Venta()
         {
