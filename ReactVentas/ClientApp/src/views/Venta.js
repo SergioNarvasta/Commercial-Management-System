@@ -54,7 +54,7 @@ const Venta = () => {
     //como se debe mostrar las sugerencias - codigo html
     const renderSuggestion = (sugerencia) => (
         <span>
-            {sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion + " -Stock :"+sugerencia.stock}
+            {sugerencia.codigo + " - " + sugerencia.marca + " - " + sugerencia.descripcion + " -Stock :" + sugerencia.stock}
         </span>
      )
 

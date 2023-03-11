@@ -86,39 +86,5 @@ namespace ReactVentas.Controllers
             }
         }*/
 
-        
-        [HttpPut]
-        [Route("Editar")]
-        public async Task<IActionResult> Editar([FromBody] Producto request)
-        {
-            try
-            {
-                _context.Productos.Update(request);
-                await _context.SaveChangesAsync();
-
-                return StatusCode(StatusCodes.Status200OK, "ok");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-
-        [HttpDelete]
-        [Route("Eliminar/{id:int}")]
-        public async Task<IActionResult> Eliminar(int id)
-        {
-            try
-            {
-                Producto usuario = _context.Productos.Find(id);
-                _context.Productos.Remove(usuario);
-                await _context.SaveChangesAsync();
-                return StatusCode(StatusCodes.Status200OK, "ok");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }*/
     }
 }
