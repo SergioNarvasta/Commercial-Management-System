@@ -10,6 +10,7 @@ namespace ReactVentas.Controllers
     public class CategoriaController : ControllerBase
     {
         private readonly DBREACT_VENTAContext _context;
+        
         public CategoriaController(DBREACT_VENTAContext context)
         {
             _context = context;

@@ -22,6 +22,7 @@ namespace ReactVentas.Repositories
            _context = context;
         }
     
+    
     /*
         public async Task<IActionResult> RegistraCompra (DtoCompra request){
             string numeroDocumento = "";
