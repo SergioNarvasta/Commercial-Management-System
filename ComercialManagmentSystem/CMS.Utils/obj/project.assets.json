@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\Aplication\\CMS.Aplication.csproj",
-      "projectName": "CMS.Aplication",
-      "projectPath": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\Aplication\\CMS.Aplication.csproj",
+      "projectUniqueName": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\CMS.Utils\\CMS.Utils.csproj",
+      "projectName": "CMS.Utils",
+      "projectPath": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\CMS.Utils\\CMS.Utils.csproj",
       "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
-      "outputPath": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\Aplication\\obj\\",
+      "outputPath": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\CMS.Utils\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,11 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="MongoClient\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
