@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace ReactVentas.Models
 {
-    public partial class DBREACT_VENTAContext : DbContext
+    public partial class AppDbContext : DbContext
     {
-        public DBREACT_VENTAContext()
+        public AppDbContext()
         {
         }
 
-        public DBREACT_VENTAContext(DbContextOptions<DBREACT_VENTAContext> options)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
         }
