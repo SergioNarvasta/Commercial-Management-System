@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ReactVentas"
+    "\\ReactVentas",
+    "\\ReactVentas\\Controllers",
+    "\\ReactVentas\\Models",
+    "\\ReactVentas\\Repositories"
   ],
-  "SelectedNode": "\\ReactVentas\\ReactVentas.sln",
+  "SelectedNode": "\\ReactVentas\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
