@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactVentas.Models
+namespace CMS.Domain.Entities
 {
-    public class Archivo : Audit
+    public class File : Audit
     {
-        public int     Archivo_Id         {get;set;}
-        public string  Archivo_Nombre     {get;set;}       
-        public string  Archivo_Extension  {get;set;}   
-        public double  Archivo_Tamanio    {get;set;}      
-        public string  Archivo_Ubicacion  {get;set;}  
-        public int     Archivo_Estado     {get;set;}   
-        public string  Archivo_Base64     {get;set;} 
+        public int     Id         {get;set;}
+        public string  Name     {get;set;}       
+        public string  Extension  {get;set;}   
+        public double  Size    {get;set;}      
+        public string  Location  {get;set;}  
+        public int     Status     {get;set;}   
+        public string  Base64     {get;set;} 
           
     }
 }

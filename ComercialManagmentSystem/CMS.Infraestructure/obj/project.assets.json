@@ -1155,6 +1155,26 @@
             "rid": "win"
           }
         }
+      },
+      "CMS.Aplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CMS.Aplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CMS.Aplication.dll": {}
+        }
+      },
+      "CMS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CMS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CMS.Domain.dll": {}
+        }
       }
     }
   },
@@ -3500,10 +3520,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CMS.Aplication/1.0.0": {
+      "type": "project",
+      "path": "../Aplication/CMS.Aplication.csproj",
+      "msbuildProject": "../Aplication/CMS.Aplication.csproj"
+    },
+    "CMS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CMS.Domain/CMS.Domain.csproj",
+      "msbuildProject": "../CMS.Domain/CMS.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CMS.Aplication >= 1.0.0",
+      "CMS.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10"
@@ -3535,7 +3567,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\Aplication\\CMS.Aplication.csproj": {
+              "projectPath": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\Aplication\\CMS.Aplication.csproj"
+            },
+            "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\CMS.Domain\\CMS.Domain.csproj": {
+              "projectPath": "F:\\3.PROYECTOS\\SGC\\CommercialManagementSystem\\ComercialManagmentSystem\\CMS.Domain\\CMS.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

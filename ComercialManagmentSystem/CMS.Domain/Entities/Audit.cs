@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactVentas.Models
+namespace CMS.Domain.Entities
 {
-    public class Archivo
+    public class Audit
     {
         public string   Aud_UsuCre  {get;set;} 
         public DateTime Aud_FecCre  {get;set;} 

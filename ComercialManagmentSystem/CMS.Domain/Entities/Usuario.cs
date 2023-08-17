@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ReactVentas.Models
+namespace CMS.Domain.Entities
 {
     public partial class Usuario
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-
+using CMS.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactVentas.Models
+namespace CMS.Infraestructure
 {
     public partial class AppDbContext : DbContext
     {

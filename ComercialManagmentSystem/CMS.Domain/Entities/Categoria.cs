@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ReactVentas.Models
+namespace CMS.Domain.Entities
 {
     public partial class Categoria
     {
@@ -10,10 +10,10 @@ namespace ReactVentas.Models
             Productos = new HashSet<Producto>();
         }
 
-        public int IdCategoria { get; set; }
-        public string Descripcion { get; set; }
-        public bool EsActivo { get; set; }
-        public DateTime FechaRegistro { get; set; }
+        public int Id { get; set; }
+        public string Description { get; set; }
+        public bool isActive { get; set; }
+        public DateTime CreateDate { get; set; }
 
         public virtual ICollection<Producto> Productos { get; set; }
     }
