@@ -9,9 +9,9 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class CategoriaController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
+        private readonly AppDbContext _context;
         
-        public CategoriaController(DBREACT_VENTAContext context)
+        public CategoriaController(AppDbContext context)
         {
             _context = context;
 

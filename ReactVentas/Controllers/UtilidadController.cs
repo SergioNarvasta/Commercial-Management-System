@@ -11,7 +11,7 @@ namespace ReactVentas.Controllers
     public class UtilidadController : ControllerBase
     {
 
-        private readonly DBREACT_VENTAContext _context;
+        private readonly AppDbContext _context;
         public UtilidadController(DBREACT_VENTAContext context)
         {
             _context = context;

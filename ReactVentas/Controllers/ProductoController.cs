@@ -9,8 +9,8 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
-        public ProductoController(DBREACT_VENTAContext context)
+        private readonly AppDbContext _context;
+        public ProductoController(AppDbContext context)
         {
             _context = context;
 

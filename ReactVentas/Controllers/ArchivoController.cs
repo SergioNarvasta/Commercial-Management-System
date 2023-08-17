@@ -14,8 +14,8 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class ArchivoController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
-        public ArchivoController(DBREACT_VENTAContext context)
+        private readonly AppDbContext _context;
+        public ArchivoController(AppDbContext context)
         {
             _context = context;
 

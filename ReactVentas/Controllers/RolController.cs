@@ -9,8 +9,8 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class RolController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
-        public RolController(DBREACT_VENTAContext context)
+        private readonly AppDbContext _context;
+        public RolController(AppDbContext context)
         {
             _context = context;
         }

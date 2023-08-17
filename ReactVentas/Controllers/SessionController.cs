@@ -10,8 +10,8 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class SessionController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
-        public SessionController(DBREACT_VENTAContext context)
+        private readonly AppDbContext _context;
+        public SessionController(AppDbContext context)
         {
             _context = context;
         }
