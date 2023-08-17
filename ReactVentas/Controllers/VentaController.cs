@@ -14,8 +14,8 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class VentaController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
-        public VentaController(DBREACT_VENTAContext context)
+        private readonly AppDbContext _context;
+        public VentaController(AppDbContext context)
         {
             _context = context;
 

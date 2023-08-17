@@ -9,8 +9,8 @@ namespace ReactVentas.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly DBREACT_VENTAContext _context;
-        public UsuarioController(DBREACT_VENTAContext context)
+        private readonly AppDbContext _context;
+        public UsuarioController(AppDbContext context)
         {
             _context = context;
 
