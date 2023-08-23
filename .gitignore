@@ -1,0 +1,14 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/DesignTimeBuild/.dtbcache.v2
+*.vsidx
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/FileContentIndex/baaa0c82-adf1-4588-9f5c-81b1e1cd4aa6.vsidx
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/FileContentIndex/c33fb220-b53a-4422-b2ba-6822c71b0846.vsidx
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/FileContentIndex/d159eb2a-4c94-4f39-acf3-d8ad87861f68.vsidx
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/FileContentIndex/d5df0163-a2e0-4107-89e4-9ba19a333110.vsidx
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/v17/.suo
+/ComercialManagmentSystem/.vs/ComercialManagmentSystem/v17/.futdcache.v2
+/ComercialManagmentSystem/.vs/ProjectEvaluation/comercialmanagmentsystem.metadata.v7.bin
+/ComercialManagmentSystem/.vs/ProjectEvaluation/comercialmanagmentsystem.projects.v7.bin
