@@ -20,7 +20,6 @@ namespace CMS.Domain.Entities
         public decimal SubTotal { get; set; }
         public decimal ImpuestoTotal { get; set; }
         public decimal Total { get; set; }
-
         public virtual Usuario IdUsuarioNavigation { get; set; }
         public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
     }
