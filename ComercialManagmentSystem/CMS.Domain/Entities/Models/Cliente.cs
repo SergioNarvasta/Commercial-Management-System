@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CMS.Domain.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace ReactVentas.Models
 {
