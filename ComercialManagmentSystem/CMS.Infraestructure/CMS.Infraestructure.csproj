@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="MongoClient\" />
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="MongoClient\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="MongoClient\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="MongoClient\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Services\" />
   </ItemGroup>
 
