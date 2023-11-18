@@ -9,14 +9,13 @@
   <ItemGroup>
     <Compile Remove="Interfaces\**" />
     <Compile Remove="MongoClient\**" />
+    <Compile Remove="Services\**" />
     <EmbeddedResource Remove="Interfaces\**" />
     <EmbeddedResource Remove="MongoClient\**" />
+    <EmbeddedResource Remove="Services\**" />
     <None Remove="Interfaces\**" />
     <None Remove="MongoClient\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
+    <None Remove="Services\**" />
   </ItemGroup>
 
   <ItemGroup>
