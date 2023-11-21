@@ -7,18 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\**" />
     <Compile Remove="Controller\**" />
-    <Content Remove="Controllers\**" />
     <Content Remove="Controller\**" />
-    <EmbeddedResource Remove="Controllers\**" />
     <EmbeddedResource Remove="Controller\**" />
-    <None Remove="Controllers\**" />
     <None Remove="Controller\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
