@@ -20,14 +20,16 @@ Contains the modules: -User Management
 
 -Cash Management
 
+-Reports
+
+In Progress
+
 -Kardex movements
 
 -Product Transaction
 
 -Electronic billing
 
--Reports
-
 -Custom CRM
 
-Update: snarvasta 270223
+Update: snarvasta 051223
