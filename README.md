@@ -2,7 +2,7 @@
 
 Pharmaceutical Management System currently developed 
 API REST : .NET 6, Entity Framework Core, Dapper, LINQ, Mapper, SQL Server. 
-SPA : React & Angular, Javascript, Typescript, JQuery.
+SPA : React , Javascript, Typescript, JQuery.
 
 Contains the modules: -User Management
 
@@ -19,6 +19,8 @@ Contains the modules: -User Management
 -Purchasing Management
 
 -Cash Management
+
+In Progress:
 
 -Kardex movements
 
